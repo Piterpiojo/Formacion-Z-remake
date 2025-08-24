@@ -4,7 +4,12 @@ public class ControJugador : MonoBehaviour
 {
     InputSystem_Actions controles;
     public Vector2 direcciones;
+    public GameObject balaPrefab;
     Rigidbody rb;
+
+    float limiteX = 60f;
+    float limitey = 0.2f;
+    public GameObject puntoDisparo;
 
     Animator anim;
     public float velocidad = 25f;
@@ -13,11 +18,13 @@ public class ControJugador : MonoBehaviour
         controles = new InputSystem_Actions();
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
+
     }
 
     void OnEnable()
     {
         controles.Enable();
+        controles.Player.Attack.performed += ctx => disparar();
     }
 
     void OnDisable()
@@ -33,7 +40,16 @@ public class ControJugador : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.AddForce(direcciones.normalized * velocidad, ForceMode.Acceleration);
-        anim.SetFloat("Y", direcciones.y);
+
+            rb.AddForce(direcciones.normalized * velocidad, ForceMode.Acceleration);
+            anim.SetFloat("Y", direcciones.y);
+
+
+    }
+
+    void disparar()
+    {
+        Debug.Log("Disparando");
+        Instantiate(balaPrefab, puntoDisparo.transform.position + puntoDisparo.transform.forward * 2, puntoDisparo.transform.rotation);
     }
 }
