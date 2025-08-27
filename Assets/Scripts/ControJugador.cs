@@ -40,16 +40,25 @@ public class ControJugador : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (transform.position.y > limiteX)
+        {
+            direcciones.y = -1;
+        }
 
             rb.AddForce(direcciones.normalized * velocidad, ForceMode.Acceleration);
             anim.SetFloat("Y", direcciones.y);
-
-
     }
 
     void disparar()
     {
-        Debug.Log("Disparando");
         Instantiate(balaPrefab, puntoDisparo.transform.position + puntoDisparo.transform.forward * 2, puntoDisparo.transform.rotation);
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Piso"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
