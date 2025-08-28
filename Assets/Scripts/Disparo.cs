@@ -17,4 +17,23 @@ public class Disparo : MonoBehaviour
     {
         rb.linearVelocity= transform.forward * velocidad;
     }
+
+
+        void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Enemigo"))
+        {
+            Destroy(collision.gameObject);  
+            Destroy(gameObject);
+        }
+    }
+
+
+    void OnTriggerEnter(Collider other){
+                if(other.gameObject.CompareTag("Enemigo"))
+        {
+            Destroy(other.gameObject);  
+            Destroy(gameObject);
+        }
+    }
 }
