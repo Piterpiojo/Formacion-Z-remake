@@ -3,24 +3,21 @@ using System.Collections;
 
 public class Spawneador : MonoBehaviour
 {
-    public GameObject cosa;
-    public GameObject SubeYbaja;
-    public GameObject terreno;
+    public GameObject enemigo;
+    public float tiempoEntreSpawns = 5f;
     void Start()
     {
-         StartCoroutine("tiempo");
-    }
 
-    void Update()
-    {
-       
-
-    }
-
-
-    IEnumerator tiempo(){
-        yield return new WaitForSeconds(7f);    
-        Instantiate(cosa,transform.position,Quaternion.identity);
         StartCoroutine("tiempo");
     }
+
+
+
+    IEnumerator tiempo()
+    {
+        yield return new WaitForSeconds(tiempoEntreSpawns);
+        Instantiate(enemigo, transform.position, Quaternion.identity);
+        StartCoroutine("tiempo");
+    }
+
 }

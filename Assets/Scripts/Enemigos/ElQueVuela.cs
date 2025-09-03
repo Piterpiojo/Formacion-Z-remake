@@ -8,9 +8,10 @@ public class ElQueVuela : MonoBehaviour
     void Start()
     {
         camera = Camera.main;
-        rb = GetComponent<Rigidbody>(); 
-        
+        rb = GetComponent<Rigidbody>();
+
         posJugador = camera.WorldToViewportPoint(GameManager.instancia.jugador.transform.position);
+        Destroy(gameObject, 4f);
     }
 
 
