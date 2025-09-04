@@ -9,6 +9,8 @@ public class Spawneador : MonoBehaviour
     {
 
         StartCoroutine("tiempo");
+
+       
     }
 
 
@@ -16,8 +18,10 @@ public class Spawneador : MonoBehaviour
     IEnumerator tiempo()
     {
         yield return new WaitForSeconds(tiempoEntreSpawns);
-        Instantiate(enemigo, transform.position, Quaternion.identity);
+        Instantiate(enemigo, transform.position,transform.rotation);
         StartCoroutine("tiempo");
     }
+
+
 
 }

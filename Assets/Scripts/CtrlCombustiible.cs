@@ -10,10 +10,12 @@ public class CtrlCombustiible : MonoBehaviour
     float combustible = 99f;
     float maxCombustible = 99f;
 
+
     void Start()
     {
         Texto.text =combustible.ToString("00");
         StartCoroutine("Consumo");
+
     }
 
 
@@ -34,6 +36,12 @@ public class CtrlCombustiible : MonoBehaviour
         }
         
         
+    }
+
+    public void Recargar(int cantidad){
+        if (combustible < maxCombustible){
+            combustible += cantidad;
+        }
     }
 
 }

@@ -15,9 +15,8 @@ public class ElQueVuela : MonoBehaviour
     }
 
 
-    void Update()
+    void FixedUpdate()
     {
-        Debug.Log(camera.WorldToViewportPoint(transform.position));
         Vector3 pos = camera.WorldToViewportPoint(transform.position);
         if (pos.x < posJugador.x)
         {

@@ -1002,6 +1002,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1209813829
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1209813831}
+  - component: {fileID: 1209813830}
+  m_Layer: 0
+  m_Name: Spanw_volador (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1209813830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209813829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb101dce11f040848957eb24c8786c32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemigo: {fileID: 1416650676283295517, guid: ed3073d45a4df0e478cbda59965cb089, type: 3}
+  tiempoEntreSpawns: 2
+--- !u!4 &1209813831
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209813829}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 37.05852, y: 1.2, z: 12}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1001 &1285212346
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1423,13 +1469,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2144196751}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 36.51919, y: 0.30224133, z: 12.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!114 &2144196753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1442,7 +1488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb101dce11f040848957eb24c8786c32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemigo: {fileID: 1935382764256468247, guid: a60dc301b01b22b46b7d33cf70d00cf2, type: 3}
+  enemigo: {fileID: 6941765834654446660, guid: 4030f73b9b470bc429b134ae76eb16cf, type: 3}
   tiempoEntreSpawns: 7
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -1457,5 +1503,6 @@ SceneRoots:
   - {fileID: 1163763735}
   - {fileID: 2144196752}
   - {fileID: 743346620}
+  - {fileID: 1209813831}
   - {fileID: 623246903}
   - {fileID: 1932438617}
