@@ -27,7 +27,7 @@
             {
                 other.gameObject.GetComponent<CtrlCombustiible>().Recargar(10); 
                 Destroy(gameObject);
-                Debug.Log("Hola instagram!!!")
+      
             }
         }
     }

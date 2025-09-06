@@ -119,6 +119,33 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &9097084 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5893a73639de2054c8f0aae1e8b2b582, type: 3}
+  m_PrefabInstance: {fileID: 342419652}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &9097085
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9097084}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 5893a73639de2054c8f0aae1e8b2b582, type: 3}
+  m_Controller: {fileID: 9100000, guid: 09f4d9af52fc6524b82a0aa812bcda88, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &210621567
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -410,10 +437,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bicho saltarin
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2223639932434330405, guid: 5893a73639de2054c8f0aae1e8b2b582, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5893a73639de2054c8f0aae1e8b2b582, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9097085}
   m_SourcePrefab: {fileID: 100100000, guid: 5893a73639de2054c8f0aae1e8b2b582, type: 3}
 --- !u!1 &813491014
 GameObject:
@@ -638,27 +669,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 36138ddcc284ba14c8118ef5aab0c0ab, type: 3}
       propertyPath: m_LocalScale.x
-      value: 278.19
+      value: 302.23
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36138ddcc284ba14c8118ef5aab0c0ab, type: 3}
       propertyPath: m_LocalScale.y
-      value: 278.19
+      value: 302.23
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36138ddcc284ba14c8118ef5aab0c0ab, type: 3}
       propertyPath: m_LocalScale.z
-      value: 278.19
+      value: 302.23
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36138ddcc284ba14c8118ef5aab0c0ab, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36138ddcc284ba14c8118ef5aab0c0ab, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.2812
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36138ddcc284ba14c8118ef5aab0c0ab, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.6
+      value: -25.301
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36138ddcc284ba14c8118ef5aab0c0ab, type: 3}
       propertyPath: m_LocalRotation.w
@@ -691,6 +722,22 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 36138ddcc284ba14c8118ef5aab0c0ab, type: 3}
       propertyPath: m_Name
       value: Gasolina
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 36138ddcc284ba14c8118ef5aab0c0ab, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4cc200225c9525b48a1bca9ec38f7442, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 36138ddcc284ba14c8118ef5aab0c0ab, type: 3}
+      propertyPath: m_CullingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 36138ddcc284ba14c8118ef5aab0c0ab, type: 3}
+      propertyPath: m_AnimatePhysics
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 36138ddcc284ba14c8118ef5aab0c0ab, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
