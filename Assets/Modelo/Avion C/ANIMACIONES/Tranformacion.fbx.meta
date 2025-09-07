@@ -1,59 +1,9 @@
 fileFormatVersion: 2
-guid: 48820f56b331c7946988e7d8beaa2027
+guid: cbe1a9aa913d1dd468f3917824ede01c
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Cristal
-    second: {fileID: 2100000, guid: 175eece5c1b25f64da800eb1accf95a3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Manos
-    second: {fileID: 2100000, guid: ca1fa2b3489cb654dbfee022511efc39, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Modelo cara
-    second: {fileID: 2100000, guid: dbdf6daf6b2c8ea4c85ed3819c07b8d3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Modelo cuello
-    second: {fileID: 2100000, guid: 7e1d50bf87469ba44b38ba7061772729, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Modelo esqueleto
-    second: {fileID: 2100000, guid: e37896a0ea2dff1419ce8453f6369050, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Modelo nave superior
-    second: {fileID: 2100000, guid: 091e7697b00ff9c4ab17191b595e4fba, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Modelo nave.001
-    second: {fileID: 2100000, guid: 56dcaf76559e1c34f949875fe32d1771, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Partes occuras
-    second: {fileID: 2100000, guid: 7693443979ed24a449315c5b95231661, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Piernas
-    second: {fileID: 2100000, guid: 126e35231fdf616419fc38322575d306, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Pistol
-    second: {fileID: 2800000, guid: 236897c846974ab44a137617a2fc6b74, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -67,7 +17,18 @@ ModelImporter:
     removeConstantScaleCurves: 0
     motionNodeName: 
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'Esqueleto.001|Esqueleto.001_acci\xF3n' has
+      import animation warnings that might lower retargeting quality:\nNote: Activate
+      translation DOF on avatar to improve retargeting quality.\n\t'Hueso' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'anclaje
+      a pierna.L' is inbetween humanoid transforms and has rotation animation that
+      will be discarded.\n\t'anclaje a pierna.L' has scale animation that will be
+      discarded.\n\t'muslo de pierna.L' has scale animation that will be discarded.\n\t'pierna.L'
+      has scale animation that will be discarded.\n\t'anclaje a pierna.R' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'anclaje
+      a pierna.R' has scale animation that will be discarded.\n\t'muslo de pierna.R'
+      has scale animation that will be discarded.\n\t'pierna.R' has scale animation
+      that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -79,12 +40,84 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Tranformar
+      takeName: "Esqueleto.001|Esqueleto.001_acci\xF3n"
+      internalID: 5191931760643463713
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0
+        functionName: NewEvent
+        data: 
+        objectReferenceParameter: {fileID: 919132149155446097, guid: 45e70618fed99e747a4acbad336e36ee, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 1
+        functionName: CambiarModelo
+        data: 
+        objectReferenceParameter: {fileID: 2286888999000445354, guid: 2456ff780b6944f4a89b26aa60e9444a, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: "Esqueleto.001|Modelo nave superior_acci\xF3n"
+      takeName: "Esqueleto.001|Modelo nave superior_acci\xF3n"
+      internalID: 8079039595428779487
+      firstFrame: 0
+      lastFrame: 0
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 2
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
@@ -104,7 +137,7 @@ ModelImporter:
     preserveHierarchy: 0
     skinWeightsMode: 1
     maxBonesPerVertex: 12
-    minBoneWeight: 0.001
+    minBoneWeight: 0.003
     optimizeBones: 0
     meshOptimizationFlags: -1
     indexFormat: 0
@@ -864,11 +897,11 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 48820f56b331c7946988e7d8beaa2027, type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 2
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0

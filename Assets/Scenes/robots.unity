@@ -225,7 +225,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 45e70618fed99e747a4acbad336e36ee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.1
+      value: -5.36
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 45e70618fed99e747a4acbad336e36ee, type: 3}
       propertyPath: m_LocalPosition.y
@@ -517,6 +517,8 @@ MonoBehaviour:
   velocidadRotacion: 180
   fuerzaSalto: 50
   gravedad: 20
+  AVIONMODELOC: {fileID: 919132149155446097, guid: 48820f56b331c7946988e7d8beaa2027, type: 3}
+  AVIONMODELOtex: {fileID: 2286888999000445354, guid: 2456ff780b6944f4a89b26aa60e9444a, type: 3}
 --- !u!143 &685074641
 CharacterController:
   m_ObjectHideFlags: 0
@@ -750,7 +752,7 @@ Transform:
   m_GameObject: {fileID: 968289797}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -272, y: -7, z: -315}
+  m_LocalPosition: {x: -304, y: 0, z: -379}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1028,7 +1030,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 48820f56b331c7946988e7d8beaa2027, type: 3}
       propertyPath: m_Name
-      value: AVION MODELO C (MEJOR)
+      value: AVIONMODELOC
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 48820f56b331c7946988e7d8beaa2027, type: 3}
       propertyPath: m_Controller
