@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cbe1a9aa913d1dd468f3917824ede01c
+guid: cd95392e5dc417b4680f8a227d6e9ee1
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -20,15 +20,9 @@ ModelImporter:
     animationImportWarnings: "\nClip 'Esqueleto.001|Esqueleto.001_acci\xF3n' has
       import animation warnings that might lower retargeting quality:\nNote: Activate
       translation DOF on avatar to improve retargeting quality.\n\t'Hueso' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'anclaje
-      a pierna.L' is inbetween humanoid transforms and has rotation animation that
-      will be discarded.\n\t'anclaje a pierna.L' has scale animation that will be
-      discarded.\n\t'muslo de pierna.L' has scale animation that will be discarded.\n\t'pierna.L'
-      has scale animation that will be discarded.\n\t'anclaje a pierna.R' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'anclaje
-      a pierna.R' has scale animation that will be discarded.\n\t'muslo de pierna.R'
-      has scale animation that will be discarded.\n\t'pierna.R' has scale animation
-      that will be discarded.\n"
+      humanoid transforms and has rotation animation that will be discarded.\n\t'Hombro.L'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Hombro.R'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -42,18 +36,18 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Tranformar
+      name: Correr apuntando
       takeName: "Esqueleto.001|Esqueleto.001_acci\xF3n"
       internalID: 5191931760643463713
-      firstFrame: 0
-      lastFrame: 30
+      firstFrame: 7
+      lastFrame: 34
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 1
       loopBlendPositionY: 1
@@ -65,14 +59,7 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events:
-      - time: 1
-        functionName: CambiarModelo
-        data: 
-        objectReferenceParameter: {fileID: 2286888999000445354, guid: 2456ff780b6944f4a89b26aa60e9444a, type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
+      events: []
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
@@ -110,7 +97,7 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 2
+    meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
@@ -130,7 +117,7 @@ ModelImporter:
     preserveHierarchy: 0
     skinWeightsMode: 1
     maxBonesPerVertex: 12
-    minBoneWeight: 0.003
+    minBoneWeight: 0.001
     optimizeBones: 0
     meshOptimizationFlags: -1
     indexFormat: 0
