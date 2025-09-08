@@ -8,13 +8,20 @@ public class CtrlCombustiible : MonoBehaviour
     TextMeshProUGUI Texto;
      [SerializeField]
     float combustible = 99f;
+    [SerializeField]
+    bool EsRobot = false;
     float maxCombustible = 99f;
 
 
     void Start()
     {
         Texto.text =combustible.ToString("00");
-        StartCoroutine("Consumo");
+        if (!EsRobot)
+        {
+            
+            StartCoroutine("Consumo");
+        }
+    
 
     }
 
