@@ -11,20 +11,30 @@ public class CtrlCombustiible : MonoBehaviour
     [SerializeField]
     bool EsRobot = false;
     float maxCombustible = 99f;
+    Coroutine consumo;
 
 
     void Start()
     {
         Texto.text =combustible.ToString("00");
-        if (!EsRobot)
-        {
-            
-            StartCoroutine("Consumo");
-        }
-    
+
+        
 
     }
+private void OnEnable() {
+            if (!EsRobot)
+        {
+            
+           consumo = StartCoroutine("Consumo");
+        }
+}
 
+private void OnDisable() {
+    if (consumo != null)
+    {
+        StopCoroutine(consumo);
+    }
+}
 
     IEnumerator Consumo()
     {

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class CrtlJugadorRobot : MonoBehaviour
@@ -6,6 +7,8 @@ public class CrtlJugadorRobot : MonoBehaviour
     public Vector2 direcciones;
     public GameObject balaPrefab;
     Rigidbody rb;
+
+    public GameObject avion;
 
     float limiteX = 60f;
     float limitey = 0.2f;
@@ -25,9 +28,11 @@ public class CrtlJugadorRobot : MonoBehaviour
 
     void OnEnable()
     {
+        GameManager.instancia.Velocidad(-5f);
         controles.Enable();
         controles.Player.Attack.performed += ctx => disparar();
         controles.Player.Jump.performed += ctx => saltar();
+        controles.Player.Transformar.performed += ctx => transformar();
     }
 
     void OnDisable()
@@ -48,8 +53,10 @@ public class CrtlJugadorRobot : MonoBehaviour
         {
             direcciones.y = -1;
         }
-        direcciones.y = 0;
-        rb.AddForce(direcciones.normalized * velocidad, ForceMode.Impulse);
+        Vector2 dir = new Vector2(direcciones.x, 0);
+
+        rb.AddForce(dir.normalized * velocidad, ForceMode.Impulse);
+        controlarApuntado(direcciones.y);
     }
     void disparar()
     {
@@ -61,5 +68,40 @@ public class CrtlJugadorRobot : MonoBehaviour
         {
             rb.AddForce(Vector3.up * 10, ForceMode.Impulse);
         }
+    }
+
+    void controlarApuntado(float y)
+    {
+        if (y > 0.1f)
+        {
+            anim.SetBool("arriba", true);
+            anim.SetBool("abajo", false);
+        }
+        else if (y < -0.1f)
+        {
+            anim.SetBool("arriba", false);
+            anim.SetBool("abajo", true);
+        }
+        else
+        {
+            anim.SetBool("arriba", false);
+            anim.SetBool("abajo", false);
+        }
+    }
+
+    void transformar()
+    {
+        
+        anim.SetTrigger("transformar");
+        StartCoroutine("EsperarTransformacion");
+
+    }
+
+    IEnumerator EsperarTransformacion()
+    {
+        yield return new WaitForSeconds(1f);
+        avion.SetActive(true);
+        avion.transform.position = transform.position;
+        gameObject.SetActive(false);
     }
 }

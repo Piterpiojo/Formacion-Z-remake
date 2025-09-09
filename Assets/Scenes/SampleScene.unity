@@ -571,13 +571,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 510589810}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
   m_LocalPosition: {x: -0.1174, y: -0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1942647014}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!1 &623246899
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,6 +1018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 0}
+  fondo: {fileID: 1871156525}
 --- !u!4 &1163763735
 Transform:
   m_ObjectHideFlags: 0
@@ -1308,6 +1309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direcciones: {x: 0, y: 0}
   balaPrefab: {fileID: 8490718242335529544, guid: 40392995d4496d5eb9d689ee146f9661, type: 3}
+  robot: {fileID: 1973401094}
   puntoDisparo: {fileID: 876346202}
   vivo: 1
   velocidad: 25
@@ -1650,6 +1652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direcciones: {x: 0, y: 0}
   balaPrefab: {fileID: 8490718242335529544, guid: 40392995d4496d5eb9d689ee146f9661, type: 3}
+  avion: {fileID: 1881742779}
   puntoDisparo: {fileID: 510589810}
   vivo: 1
   velocidad: 2.5
@@ -1665,9 +1668,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6ea994f3b10522cbb8b392af02a7711, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Texto: {fileID: 0}
+  Texto: {fileID: 43625724}
   combustible: 99
-  EsRobot: 0
+  EsRobot: 1
 --- !u!1 &2144196751
 GameObject:
   m_ObjectHideFlags: 0

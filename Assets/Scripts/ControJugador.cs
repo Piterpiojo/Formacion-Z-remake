@@ -7,6 +7,10 @@ public class ControJugador : MonoBehaviour
     public GameObject balaPrefab;
     Rigidbody rb;
 
+    public GameObject robot
+    ;
+
+
     float limiteX = 60f;
     float limitey = 0.2f;
     public GameObject puntoDisparo;
@@ -25,8 +29,10 @@ public class ControJugador : MonoBehaviour
 
     void OnEnable()
     {
+        GameManager.instancia.Velocidad(-15f);
         controles.Enable();
         controles.Player.Attack.performed += ctx => disparar();
+        controles.Player.Transformar.performed += ctx => transformar();
     }
 
     void OnDisable()
@@ -69,5 +75,14 @@ public class ControJugador : MonoBehaviour
     public void FaltaCombustible()
     {
         rb.useGravity = true;
+    }
+
+
+
+    void transformar()
+    {
+        robot.SetActive(true);
+        robot.transform.position = transform.position;
+        gameObject.SetActive(false);
     }
 }
