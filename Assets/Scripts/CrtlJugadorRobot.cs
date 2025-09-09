@@ -29,6 +29,7 @@ public class CrtlJugadorRobot : MonoBehaviour
     void OnEnable()
     {
         GameManager.instancia.Velocidad(-5f);
+         GameManager.instancia.CambiarObjetivo(transform);
         controles.Enable();
         controles.Player.Attack.performed += ctx => disparar();
         controles.Player.Jump.performed += ctx => saltar();

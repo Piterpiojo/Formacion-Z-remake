@@ -30,6 +30,7 @@ public class ControJugador : MonoBehaviour
     void OnEnable()
     {
         GameManager.instancia.Velocidad(-15f);
+        GameManager.instancia.CambiarObjetivo(transform);
         controles.Enable();
         controles.Player.Attack.performed += ctx => disparar();
         controles.Player.Transformar.performed += ctx => transformar();

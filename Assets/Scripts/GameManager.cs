@@ -1,15 +1,18 @@
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject jugador;
-    public static GameManager instancia ;
+    public static GameManager instancia;
+
+    public CinemachineCamera cam;
 
     public ElFondoScroll fondo;
 
     void Awake()
     {
-                instancia = this;
+        instancia = this;
     }
     void Start()
     {
@@ -20,5 +23,10 @@ public class GameManager : MonoBehaviour
     public void Velocidad(float cantidad)
     {
         fondo.velocidad = cantidad;
+    }
+    
+    public void CambiarObjetivo(Transform nuevoObjetivo)
+    {
+        cam.Follow = nuevoObjetivo;
     }
 }
