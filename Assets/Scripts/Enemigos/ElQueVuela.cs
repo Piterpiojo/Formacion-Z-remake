@@ -5,6 +5,9 @@ public class ElQueVuela : MonoBehaviour
     Camera camera;
     Rigidbody rb;
     Vector3 posJugador;
+
+    [SerializeField]
+    bool salta = true;
     void Start()
     {
         camera = Camera.main;
@@ -18,7 +21,7 @@ public class ElQueVuela : MonoBehaviour
     void FixedUpdate()
     {
         Vector3 pos = camera.WorldToViewportPoint(transform.position);
-        if (pos.x < posJugador.x)
+        if (pos.x < posJugador.x && salta)
         {
             rb.linearVelocity = new Vector3(-300f,600f,0) * Time.deltaTime;
         }else{
