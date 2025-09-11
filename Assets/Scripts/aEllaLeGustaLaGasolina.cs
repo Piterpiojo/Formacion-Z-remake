@@ -4,15 +4,19 @@ public class aEllaLeGustaLaGasolina : MonoBehaviour
 {
     Rigidbody rb;
     [SerializeField] bool EsRobot = false;
+    float velocidad = -330f;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         Destroy(gameObject, 5f);
+                if(GameManager.instancia.volando){
+            velocidad=velocidad*2;
+             }
     }
     void FixedUpdate()
     {
-        rb.linearVelocity = new Vector3(-330f, 0, 0) * Time.deltaTime;
+        rb.linearVelocity = new Vector3(velocidad, 0, 0) * Time.deltaTime;
     }
 
 
@@ -22,7 +26,6 @@ public class aEllaLeGustaLaGasolina : MonoBehaviour
         {
             collision.gameObject.GetComponent<CtrlCombustiible>().Recargar(10);
             Destroy(gameObject);
-            Debug.Log("entro un colision");
         }
     }
 

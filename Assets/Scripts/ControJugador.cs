@@ -82,6 +82,7 @@ public class ControJugador : MonoBehaviour
 
     void transformar()
     {
+        GameManager.instancia.volando=false;
         robot.SetActive(true);
         robot.transform.position = transform.position;
         gameObject.SetActive(false);

@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
 
     public ElFondoScroll fondo;
 
+    public bool volando =false;
+
     void Awake()
     {
         instancia = this;

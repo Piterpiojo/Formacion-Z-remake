@@ -34,6 +34,7 @@ public class CrtlJugadorRobot : MonoBehaviour
         controles.Player.Attack.performed += ctx => disparar();
         controles.Player.Jump.performed += ctx => saltar();
         controles.Player.Transformar.performed += ctx => transformar();
+      
     }
 
     void OnDisable()
@@ -94,6 +95,7 @@ public class CrtlJugadorRobot : MonoBehaviour
     {
         
         anim.SetTrigger("transformar");
+          GameManager.instancia.volando=true;
         StartCoroutine("EsperarTransformacion");
 
     }

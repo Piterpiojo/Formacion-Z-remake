@@ -6,15 +6,19 @@ public class ElQueVuela : MonoBehaviour
     Rigidbody rb;
     Vector3 posJugador;
 
+    public float velocidad= -300f;
+
     [SerializeField]
     bool salta = true;
     void Start()
     {
         camera = Camera.main;
         rb = GetComponent<Rigidbody>();
-
         posJugador = camera.WorldToViewportPoint(GameManager.instancia.jugador.transform.position);
         Destroy(gameObject, 4f);
+        if(GameManager.instancia.volando){
+            velocidad=velocidad*2;
+             }
     }
 
 
@@ -23,9 +27,9 @@ public class ElQueVuela : MonoBehaviour
         Vector3 pos = camera.WorldToViewportPoint(transform.position);
         if (pos.x < posJugador.x && salta)
         {
-            rb.linearVelocity = new Vector3(-300f,600f,0) * Time.deltaTime;
+            rb.linearVelocity = new Vector3(velocidad,600f,0) * Time.deltaTime;
         }else{
-             rb.linearVelocity = new Vector3(-330f,0,0) * Time.deltaTime;
+             rb.linearVelocity = new Vector3(velocidad,0,0) * Time.deltaTime;
         }
     }
 
