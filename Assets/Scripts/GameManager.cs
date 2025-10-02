@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public CinemachineCamera cam;
 
     public ElFondoScroll fondo;
-
+    public int balas = 0;
     public bool volando =false;
 
     void Awake()
@@ -31,4 +31,6 @@ public class GameManager : MonoBehaviour
     {
         cam.Follow = nuevoObjetivo;
     }
+
+
 }
