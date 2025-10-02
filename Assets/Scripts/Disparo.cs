@@ -10,30 +10,37 @@ public class Disparo : MonoBehaviour
 
         rb = GetComponent<Rigidbody>();
 
-        Destroy(gameObject, 1);
+        Destroy(gameObject, 0.7f    );
     }
 
     void FixedUpdate()
     {
-        rb.linearVelocity= transform.forward * velocidad;
+        rb.linearVelocity = transform.forward * velocidad;
     }
 
 
-        void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Enemigo"))
+        if (collision.gameObject.CompareTag("Enemigo"))
         {
-            Destroy(collision.gameObject);  
+            Destroy(collision.gameObject);
             Destroy(gameObject);
         }
     }
 
 
-    void OnTriggerEnter(Collider other){
-                if(other.gameObject.CompareTag("Enemigo"))
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Enemigo"))
         {
-            Destroy(other.gameObject);  
+            Destroy(other.gameObject);
             Destroy(gameObject);
         }
+    }
+
+
+    void OnDestroy()
+    {
+        GameManager.instancia.balas-=1;
     }
 }

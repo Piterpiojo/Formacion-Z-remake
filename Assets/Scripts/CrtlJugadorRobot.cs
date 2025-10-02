@@ -29,12 +29,12 @@ public class CrtlJugadorRobot : MonoBehaviour
     void OnEnable()
     {
         GameManager.instancia.Velocidad(-5f);
-         GameManager.instancia.CambiarObjetivo(transform);
+        GameManager.instancia.CambiarObjetivo(transform);
         controles.Enable();
         controles.Player.Attack.performed += ctx => disparar();
         controles.Player.Jump.performed += ctx => saltar();
         controles.Player.Transformar.performed += ctx => transformar();
-      
+
     }
 
     void OnDisable()
@@ -60,9 +60,13 @@ public class CrtlJugadorRobot : MonoBehaviour
         rb.AddForce(dir.normalized * velocidad, ForceMode.Impulse);
         controlarApuntado(direcciones.y);
     }
-    void disparar()
+    void    disparar()
     {
-        Instantiate(balaPrefab, puntoDisparo.transform.position + puntoDisparo.transform.forward * 2, puntoDisparo.transform.rotation);
+        if (GameManager.instancia.balas <3){
+            Instantiate(balaPrefab, puntoDisparo.transform.position + puntoDisparo.transform.forward * 2, puntoDisparo.transform.rotation);
+            GameManager.instancia.balas+=1;
+        }
+       
     }
     void saltar()
     {
@@ -93,9 +97,9 @@ public class CrtlJugadorRobot : MonoBehaviour
 
     void transformar()
     {
-        
+
         anim.SetTrigger("transformar");
-          GameManager.instancia.volando=true;
+        GameManager.instancia.volando = true;
         StartCoroutine("EsperarTransformacion");
 
     }
@@ -106,5 +110,11 @@ public class CrtlJugadorRobot : MonoBehaviour
         avion.SetActive(true);
         avion.transform.position = transform.position;
         gameObject.SetActive(false);
+    }
+
+    void  OnTriggerEnter(Collider other){
+        if (other.gameObject.tag == "Enemigo"){
+            GestionVida.instancia.recibir_danio(1); 
+        }
     }
 }
