@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cd95392e5dc417b4680f8a227d6e9ee1
+guid: d7b6f5073390d0c4eb143c1951f9fdc7
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -36,11 +36,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Correr apuntando
+      name: Apuntar arriba
       takeName: "Esqueleto.001|Esqueleto.001_acci\xF3n"
       internalID: 5191931760643463713
       firstFrame: 7
-      lastFrame: 33
+      lastFrame: 35
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

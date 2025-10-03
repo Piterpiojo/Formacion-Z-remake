@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cd95392e5dc417b4680f8a227d6e9ee1
+guid: 411ce34a74cce804196d21ccc56d02c8
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -20,9 +20,7 @@ ModelImporter:
     animationImportWarnings: "\nClip 'Esqueleto.001|Esqueleto.001_acci\xF3n' has
       import animation warnings that might lower retargeting quality:\nNote: Activate
       translation DOF on avatar to improve retargeting quality.\n\t'Hueso' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'Hombro.L'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Hombro.R'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
+      humanoid transforms and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -36,7 +34,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Correr apuntando
+      name: intefaz animation
       takeName: "Esqueleto.001|Esqueleto.001_acci\xF3n"
       internalID: 5191931760643463713
       firstFrame: 7
@@ -44,10 +42,10 @@ ModelImporter:
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
-      cycleOffset: 0
+      cycleOffset: 20
       loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
+      hasAdditiveReferencePose: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 1
       loopBlendPositionY: 1
@@ -63,7 +61,7 @@ ModelImporter:
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 7
     - serializedVersion: 16
       name: "Esqueleto.001|Modelo nave superior_acci\xF3n"
       takeName: "Esqueleto.001|Modelo nave superior_acci\xF3n"
