@@ -60,7 +60,7 @@ public class CrtlJugadorRobot : MonoBehaviour
         rb.AddForce(dir.normalized * velocidad, ForceMode.Impulse);
         controlarApuntado(direcciones.y);
     }
-    void    disparar()
+    void disparar()
     {
         if (GameManager.instancia.balas <3){
             Instantiate(balaPrefab, puntoDisparo.transform.position + puntoDisparo.transform.forward * 2, puntoDisparo.transform.rotation);
@@ -70,10 +70,16 @@ public class CrtlJugadorRobot : MonoBehaviour
     }
     void saltar()
     {
-        if (transform.position.y < limitey)
+        if (enSuelo())
         {
-            rb.AddForce(Vector3.up * 10, ForceMode.Impulse);
+            Debug.Log("saltando");
+            rb.AddForce(Vector3.up * 8, ForceMode.Impulse);
         }
+    }
+
+    bool enSuelo()
+    {
+        return Physics.Raycast(transform.position, Vector3.down, 2f);
     }
 
     void controlarApuntado(float y)

@@ -13,7 +13,7 @@ public class GenerarDisparador : MonoBehaviour
     void Start()
     {
 
-        generar();
+        esperar(20f);
     }
 
 
@@ -23,7 +23,7 @@ public class GenerarDisparador : MonoBehaviour
         GameObject enemigo = Instantiate(Enemigo, patrones[num].transform.position, Quaternion.identity);
         enemigo.GetComponent<SplineAnimate>().Container = patrones[num];
         enemigo.GetComponent<SplineAnimate>().Play();
-        float rand = Random.Range(3, 17);
+        float rand = Random.Range(7, 17);
         
         StartCoroutine(esperar(rand));
     }

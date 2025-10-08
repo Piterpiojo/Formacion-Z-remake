@@ -15,7 +15,7 @@ public class ElQueVuela : MonoBehaviour
         camera = Camera.main;
         rb = GetComponent<Rigidbody>();
         posJugador = camera.WorldToViewportPoint(GameManager.instancia.jugador.transform.position);
-        Destroy(gameObject, 4f);
+        Destroy(gameObject, 6f);
         if(GameManager.instancia.volando){
             velocidad=velocidad*2;
              }
