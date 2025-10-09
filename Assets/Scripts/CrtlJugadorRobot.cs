@@ -120,7 +120,8 @@ public class CrtlJugadorRobot : MonoBehaviour
 
     void  OnTriggerEnter(Collider other){
         if (other.gameObject.tag == "Enemigo"){
-            GestionVida.instancia.recibir_danio(1); 
+            GestionVida.instancia.recibir_danio(1);
+            Destroy(other);
         }
     }
 }

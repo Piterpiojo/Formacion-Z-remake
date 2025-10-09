@@ -66,6 +66,6 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "Formacion Z remake.slnx",
+    "dotnet.defaultSolution": "Formacion-Z-remake.slnx",
     "dotnet.preferCSharpExtension": true
 }
