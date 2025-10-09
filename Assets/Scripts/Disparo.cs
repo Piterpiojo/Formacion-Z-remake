@@ -35,6 +35,8 @@ public class Disparo : MonoBehaviour
         {
             Destroy(other.gameObject);
             Destroy(gameObject);
+        }else if (other.gameObject.CompareTag("jefe")){
+            other.GetComponent<SaludEnemigo>().recibirDanio();
         }
     }
 
