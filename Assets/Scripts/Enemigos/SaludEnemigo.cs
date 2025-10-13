@@ -9,7 +9,7 @@ public class SaludEnemigo : MonoBehaviour
         
     }
 
-    void recibirDanio(){
+    public void recibirDanio(){
         salud -=1;
         if (salud < 1)
         Destroy(gameObject);
