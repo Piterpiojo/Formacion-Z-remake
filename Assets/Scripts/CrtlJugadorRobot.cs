@@ -118,10 +118,14 @@ public class CrtlJugadorRobot : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    void  OnTriggerEnter(Collider other){
-        if (other.gameObject.tag == "Enemigo"){
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Enemigo")
+        {
             GestionVida.instancia.recibir_danio(1);
             Destroy(other);
         }
     }
+    
+    
 }

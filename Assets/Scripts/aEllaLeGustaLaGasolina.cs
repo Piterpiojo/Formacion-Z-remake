@@ -10,9 +10,10 @@ public class aEllaLeGustaLaGasolina : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         Destroy(gameObject, 5f);
-                if(GameManager.instancia.volando){
-            velocidad=velocidad*2;
-             }
+        if (GameManager.instancia.volando)
+        {
+            velocidad = velocidad * 2;
+        }
     }
     void FixedUpdate()
     {

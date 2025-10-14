@@ -151,4 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d45d5c347561b72ca305fef7a95a154, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  efect:
+  - {fileID: 9072304001593974594, guid: 79751c0404a268d1da0be5e5575ebde7, type: 3}
+  - {fileID: 394357774696525417, guid: c1ad959a528a9d36a885e85e90a6fc2b, type: 3}
   velocidad: 40

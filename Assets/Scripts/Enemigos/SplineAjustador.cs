@@ -4,6 +4,7 @@ public class SplineAjustador : MonoBehaviour
 {
     Camera camera;
     float Xviewport = 1f;
+    [SerializeField] float yCoso=0.5f;
 
 
     void Start()
@@ -12,7 +13,7 @@ public class SplineAjustador : MonoBehaviour
     }
     void LateUpdate()
     {
-        Vector3 pos = new Vector3(Xviewport, 0.5f, 12f);
+        Vector3 pos = new Vector3(Xviewport, yCoso, 12f);
         Vector3 worldPos = camera.ViewportToWorldPoint(pos);
         worldPos.z = 12f; 
         transform.position = worldPos;

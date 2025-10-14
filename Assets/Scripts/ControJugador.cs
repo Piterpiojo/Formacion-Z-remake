@@ -82,9 +82,18 @@ public class ControJugador : MonoBehaviour
 
     void transformar()
     {
-        GameManager.instancia.volando=false;
+        GameManager.instancia.volando = false;
         robot.SetActive(true);
         robot.transform.position = transform.position;
         gameObject.SetActive(false);
+    }
+    
+        void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Enemigo")
+        {
+            GestionVida.instancia.recibir_danio(1);
+            Destroy(other);
+        }
     }
 }
