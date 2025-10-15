@@ -1,0 +1,348 @@
+fileFormatVersion: 2
+guid: 857b17ce78433b844a420887237c07a1
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: <Root Transform>
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 1
+    importConstraints: 1
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: "Esqueleto|Esqueleto_acci\xF3n (1)"
+      takeName: "Esqueleto|Esqueleto_acci\xF3n"
+      internalID: -2519813810405621656
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: alas
+        weight: 1
+      - path: cabeza
+        weight: 1
+      - path: cuerpo
+        weight: 1
+      - path: Esqueleto
+        weight: 1
+      - path: Esqueleto/cintura a.Left.Bk
+        weight: 1
+      - path: Esqueleto/cintura a.Left.Bk/Conector piernab.Bk
+        weight: 1
+      - path: Esqueleto/cintura a.Left.Bk/Conector piernab.Bk/Musclob.Bk
+        weight: 1
+      - path: Esqueleto/cintura a.Left.Bk/Conector piernab.Bk/Musclob.Bk/Pantarilla.Bk
+        weight: 1
+      - path: Esqueleto/cintura a.Left.Bk/Conector piernab.Bk/Musclob.Bk/Pantarilla.Bk/Piernab.Bk
+        weight: 1
+      - path: Esqueleto/cintura a.Left.Bk/Conector piernab.Bk/Musclob.Bk/Pantarilla.Bk/Piernab.Bk/palito
+          c.Bk
+        weight: 1
+      - path: Esqueleto/cintura a.Left.Bk/Conector piernab.Bk/Musclob.Bk/Pantarilla.Bk/Piernab.Bk/Palitod.Bk
+        weight: 1
+      - path: Esqueleto/cintura a.Left.Bk/ConectorPiernaa.Bk
+        weight: 1
+      - path: Esqueleto/cintura a.Left.Bk/ConectorPiernaa.Bk/musco a.Bk
+        weight: 1
+      - path: Esqueleto/cintura a.Left.Bk/ConectorPiernaa.Bk/musco a.Bk/Pantorilla.Bk
+        weight: 1
+      - path: Esqueleto/cintura a.Left.Bk/ConectorPiernaa.Bk/musco a.Bk/Pantorilla.Bk/Pierna.Bk
+        weight: 1
+      - path: Esqueleto/cintura a.Left.Bk/ConectorPiernaa.Bk/musco a.Bk/Pantorilla.Bk/Pierna.Bk/Patita
+          a.Bk
+        weight: 1
+      - path: Esqueleto/cintura a.Left.Bk/ConectorPiernaa.Bk/musco a.Bk/Pantorilla.Bk/Pierna.Bk/Patitab.Bk
+        weight: 1
+      - path: Esqueleto/Hueso
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.001
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.001/Hueso.002
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003/Hueso.004
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003/Hueso.004/Hueso.005
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003/Hueso.004/Hueso.005/Hueso.006
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003/Hueso.004/Hueso.005/Hueso.006/Hueso.007
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003/Hueso.008
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003/Hueso.008/Hueso.009
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003/Hueso.008/Hueso.009/Hueso.010
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003/Hueso.008/Hueso.009/Hueso.010/Hueso.011
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003.L
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003.L/Hueso.004.L
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003.L/Hueso.004.L/Hueso.005.R
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003.L/Hueso.004.L/Hueso.005.R/Hueso.006.R
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003.L/Hueso.004.L/Hueso.005.R/Hueso.006.R/Hueso.007.R
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003.L/Hueso.004.L/Hueso.005.R/Hueso.006.R/Hueso.007.R/Hueso.008.R
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003.L/Hueso.004.L/Hueso.005.R/Hueso.006.R/Hueso.007.R/Hueso.008.R/Hueso.009.R
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003.L/Hueso.004.L/Hueso.005.R/Hueso.006.R/Hueso.007.R/Hueso.010.R
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003.L/Hueso.004.L/Hueso.005.R/Hueso.006.R/Hueso.007.R/Hueso.010.R/Hueso.011.R
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003.R
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003.R/Hueso.004.R
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003.R/Hueso.004.R/Hueso.005.L
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003.R/Hueso.004.R/Hueso.005.L/Hueso.006.L
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003.R/Hueso.004.R/Hueso.005.L/Hueso.006.L/Hueso.007.L
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003.R/Hueso.004.R/Hueso.005.L/Hueso.006.L/Hueso.007.L/Espada
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003.R/Hueso.004.R/Hueso.005.L/Hueso.006.L/Hueso.007.L/Hueso.008.L
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003.R/Hueso.004.R/Hueso.005.L/Hueso.006.L/Hueso.007.L/Hueso.008.L/Hueso.009.L
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003.R/Hueso.004.R/Hueso.005.L/Hueso.006.L/Hueso.007.L/Hueso.010.L
+        weight: 1
+      - path: Esqueleto/Hueso/Hueso.003.R/Hueso.004.R/Hueso.005.L/Hueso.006.L/Hueso.007.L/Hueso.010.L/Hueso.011.L
+        weight: 1
+      - path: Esqueleto/Hueso.012
+        weight: 1
+      - path: Esqueleto/Hueso.012/Hueso.013
+        weight: 1
+      - path: Esqueleto/Hueso.012/Hueso.013/Hueso.014
+        weight: 1
+      - path: Esqueleto/Hueso.012/Hueso.013/Hueso.014/Hueso.015
+        weight: 1
+      - path: Esqueleto/Hueso.012/Hueso.013/Hueso.014/Hueso.015/Hueso.016
+        weight: 1
+      - path: Esqueleto/Hueso.012/Hueso.013/Hueso.014/Hueso.015/Hueso.016/Hueso.017
+        weight: 1
+      - path: Esqueleto/Hueso.012/Hueso.013/Hueso.014/Hueso.015/Hueso.016/Hueso.018
+        weight: 1
+      - path: Esqueleto/Hueso.012/Hueso.025
+        weight: 1
+      - path: Esqueleto/Hueso.012/Hueso.025/Hueso.026
+        weight: 1
+      - path: Esqueleto/Hueso.012/Hueso.025/Hueso.026/Hueso.027
+        weight: 1
+      - path: Esqueleto/Hueso.012/Hueso.025/Hueso.026/Hueso.027/Hueso.028
+        weight: 1
+      - path: Esqueleto/Hueso.012/Hueso.025/Hueso.026/Hueso.027/Hueso.028/Hueso.029
+        weight: 1
+      - path: Esqueleto/Hueso.012/Hueso.025/Hueso.026/Hueso.027/Hueso.028/Hueso.030
+        weight: 1
+      - path: Esqueleto/Hueso.019
+        weight: 1
+      - path: Esqueleto/Hueso.019/Hueso.020
+        weight: 1
+      - path: Esqueleto/Hueso.019/Hueso.020/Hueso.022.L
+        weight: 1
+      - path: Esqueleto/Hueso.019/Hueso.020/Hueso.022.L/Hueso.023.L
+        weight: 1
+      - path: Esqueleto/Hueso.019/Hueso.020/Hueso.022.L/Hueso.023.L/Hueso.024.L
+        weight: 1
+      - path: Esqueleto/Hueso.019/Hueso.020/Hueso.022.L/Hueso.023.L/Hueso.024.L/Hueso.031.L
+        weight: 1
+      - path: Esqueleto/Hueso.019/Hueso.020/Hueso.022.L/Hueso.023.L/Hueso.024.L/Hueso.032.L
+        weight: 1
+      - path: Esqueleto/Hueso.019/Hueso.020/Hueso.022.R
+        weight: 1
+      - path: Esqueleto/Hueso.019/Hueso.020/Hueso.022.R/Hueso.023.R
+        weight: 1
+      - path: Esqueleto/Hueso.019/Hueso.020/Hueso.022.R/Hueso.023.R/Hueso.024.R
+        weight: 1
+      - path: Esqueleto/Hueso.019/Hueso.020/Hueso.022.R/Hueso.023.R/Hueso.024.R/Hueso.031.R
+        weight: 1
+      - path: Esqueleto/Hueso.019/Hueso.020/Hueso.022.R/Hueso.023.R/Hueso.024.R/Hueso.032.R
+        weight: 1
+      - path: Esqueleto/Hueso.019/Hueso.021
+        weight: 1
+      - path: PIERNAS
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: "Esqueleto|Esqueleto_acci\xF3n"
+      takeName: "Esqueleto|Esqueleto_acci\xF3n"
+      internalID: 4582559413860510281
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: "cuerpo|cuerpo_acci\xF3n"
+      takeName: "cuerpo|cuerpo_acci\xF3n"
+      internalID: -7296858949297222498
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 1
+    maxBonesPerVertex: 12
+    minBoneWeight: 0.14
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 8526f7e28d883f44ca42c20f1d9f7a2f, type: 3}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 2
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

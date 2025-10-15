@@ -15,7 +15,7 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
-    motionNodeName: 
+    motionNodeName: <Root Transform>
     animationImportErrors: 
     animationImportWarnings: "\nClip 'Esqueleto.001|Esqueleto.001_acci\xF3n' has
       import animation warnings that might lower retargeting quality:\nNote: Activate
@@ -29,10 +29,42 @@ ModelImporter:
       a pierna.R' has scale animation that will be discarded.\n\t'muslo de pierna.R'
       has scale animation that will be discarded.\n\t'pierna.R' has scale animation
       that will be discarded.\n"
-    animationRetargetingWarnings: 
-    animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
-    importConstraints: 0
+    animationRetargetingWarnings: "\nRetargeting quality report for clip 'Esqueleto.001|Esqueleto.001_acci\xF3n':\n\tLeftLowerLeg
+      average position error 40.2 mm and maximum position error 155.4 mm at time
+      0:25 (83.3%) Frame 25\n\tLeftFoot average position error 56.0 mm and maximum
+      position error 316.1 mm at time 0:25 (83.3%) Frame 25\n\tRightLowerLeg average
+      position error 40.1 mm and maximum position error 155.1 mm at time 0:25 (83.3%)
+      Frame 25\n\tRightFoot average position error 56.2 mm and maximum position error
+      316.1 mm at time 0:25 (83.3%) Frame 25\n\tLeftUpperArm average position error
+      90.4 mm and maximum position error 307.1 mm at time 1: 0 (100.0%) Frame 30\n\tLeftLowerArm
+      average position error 72.1 mm and maximum position error 260.5 mm at time
+      1: 0 (100.0%) Frame 30\n\tLeftHand average position error 66.4 mm and maximum
+      position error 257.3 mm at time 1: 0 (100.0%) Frame 30\n\tRightUpperArm average
+      position error 90.4 mm and maximum position error 307.1 mm at time 1: 0 (100.0%)
+      Frame 30\n\tRightLowerArm average position error 70.2 mm and maximum position
+      error 248.8 mm at time 1: 0 (100.0%) Frame 30\n\tRightHand average position
+      error 65.2 mm and maximum position error 250.8 mm at time 1: 0 (100.0%) Frame
+      30\n\tHead average position error 90.4 mm and maximum position error 307.1
+      mm at time 1: 0 (100.0%) Frame 30\n\nRetargeting quality report for clip 'Esqueleto.001|Modelo
+      nave superior_acci\xF3n':\n\tLeftLowerLeg average position error 151.1 mm and
+      maximum position error 151.1 mm at time 0: 0 (0.0%) Frame 0\n\tLeftFoot average
+      position error 43.9 mm and maximum position error 43.9 mm at time 0: 0 (0.0%)
+      Frame 0\n\tRightLowerLeg average position error 150.6 mm and maximum position
+      error 150.6 mm at time 0: 0 (0.0%) Frame 0\n\tRightFoot average position error
+      46.4 mm and maximum position error 46.4 mm at time 0: 0 (0.0%) Frame 0\n\tLeftUpperArm
+      average position error 307.1 mm and maximum position error 307.1 mm at time
+      0: 0 (0.0%) Frame 0\n\tLeftLowerArm average position error 260.5 mm and maximum
+      position error 260.5 mm at time 0: 0 (0.0%) Frame 0\n\tLeftHand average position
+      error 257.3 mm and maximum position error 257.3 mm at time 0: 0 (0.0%) Frame
+      0\n\tRightUpperArm average position error 307.1 mm and maximum position error
+      307.1 mm at time 0: 0 (0.0%) Frame 0\n\tRightLowerArm average position error
+      248.8 mm and maximum position error 248.8 mm at time 0: 0 (0.0%) Frame 0\n\tRightHand
+      average position error 250.8 mm and maximum position error 250.8 mm at time
+      0: 0 (0.0%) Frame 0\n\tHead average position error 307.1 mm and maximum position
+      error 307.1 mm at time 0: 0 (0.0%) Frame 0\n"
+    animationDoRetargetingWarnings: 1
+    importAnimatedCustomProperties: 1
+    importConstraints: 1
     animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -78,7 +110,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: "Esqueleto.001|Modelo nave superior_acci\xF3n"
+      name: compli
       takeName: "Esqueleto.001|Modelo nave superior_acci\xF3n"
       internalID: 8079039595428779487
       firstFrame: 0
@@ -128,10 +160,10 @@ ModelImporter:
     weldVertices: 1
     bakeAxisConversion: 0
     preserveHierarchy: 0
-    skinWeightsMode: 1
+    skinWeightsMode: 0
     maxBonesPerVertex: 12
-    minBoneWeight: 0.003
-    optimizeBones: 0
+    minBoneWeight: 0.061
+    optimizeBones: 1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
@@ -332,7 +364,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: Hueso.004
+    - boneName: Anclaje antena.R
       humanName: RightEye
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -340,7 +372,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: Hueso.010
+    - boneName: Hueso.009
       humanName: Jaw
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -508,6 +540,66 @@ ModelImporter:
       position: {x: -0.119911164, y: 16.552212, z: 0}
       rotation: {x: -0.0022509084, y: -0.70710325, z: -0.70710313, w: 0.002250847}
       scale: {x: 394.15326, y: 394.15326, z: 394.15326}
+    - name: anclaje a pierna.L
+      parentName: Esqueleto.001
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.06117505, y: -0.061175004, z: -0.70445555, w: 0.70445555}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: muslo de pierna.L
+      parentName: anclaje a pierna.L
+      position: {x: -4.440892e-18, y: 0.005931848, z: -7.450581e-11}
+      rotation: {x: -0.7437289, y: 0.00000004920951, z: -0.00000019757348, w: 0.66848135}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: pierna.L
+      parentName: muslo de pierna.L
+      position: {x: -1.4210854e-16, y: 0.019064851, z: 5.960471e-10}
+      rotation: {x: -0.0029369767, y: 0.00003626253, z: 0.010394346, w: 0.9999417}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Pies.L
+      parentName: pierna.L
+      position: {x: -6.984919e-12, y: 0.019909995, z: 8.047141e-10}
+      rotation: {x: -0.030295942, y: -0.0018474016, z: 0.031961624, w: 0.99902815}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: Dedoa.L
+      parentName: Pies.L
+      position: {x: 2.561137e-10, y: 0.0028831337, z: -8.486677e-10}
+      rotation: {x: -0.0037305711, y: 0.00000029738854, z: -0.5410373, w: 0.8409903}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1}
+    - name: Dedob.L
+      parentName: Pies.L
+      position: {x: 2.561137e-10, y: 0.0028831337, z: -8.486677e-10}
+      rotation: {x: 0.019236254, y: 0.008057022, z: 0.44753754, w: 0.8940219}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: anclaje a pierna.R
+      parentName: Esqueleto.001
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.06117505, y: 0.061175004, z: 0.70445555, w: 0.70445555}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: muslo de pierna.R
+      parentName: anclaje a pierna.R
+      position: {x: 4.440892e-18, y: 0.005931848, z: -7.450581e-11}
+      rotation: {x: -0.7437289, y: -0.00000004920951, z: 0.00000019757348, w: 0.66848135}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: pierna.R
+      parentName: muslo de pierna.R
+      position: {x: 1.4210854e-16, y: 0.019064851, z: 5.960471e-10}
+      rotation: {x: -0.0029369767, y: -0.00003626253, z: -0.010394346, w: 0.9999417}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Pies.R
+      parentName: pierna.R
+      position: {x: 6.984919e-12, y: 0.019909995, z: 8.047141e-10}
+      rotation: {x: -0.030295942, y: 0.0018474016, z: -0.031961624, w: 0.99902815}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: Dedoa.R
+      parentName: Pies.R
+      position: {x: -2.561137e-10, y: 0.0028831337, z: -8.486677e-10}
+      rotation: {x: -0.0037305711, y: -0.00000029738854, z: 0.5410373, w: 0.8409903}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1}
+    - name: Dedob.R
+      parentName: Pies.R
+      position: {x: -2.561137e-10, y: 0.0028831337, z: -8.486677e-10}
+      rotation: {x: 0.019236254, y: -0.008057022, z: -0.44753754, w: 0.8940219}
+      scale: {x: 1, y: 1, z: 0.99999994}
     - name: Hueso
       parentName: Esqueleto.001
       position: {x: -0, y: 0, z: 0}
@@ -523,6 +615,201 @@ ModelImporter:
       position: {x: -0, y: 0.005119073, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
+    - name: Hombro.L
+      parentName: Hueso.013
+      position: {x: -0, y: 0.005119073, z: 0}
+      rotation: {x: 0.00000011133067, y: 0.00000007170442, z: -0.7780316, w: 0.62822527}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ala inferior.L
+      parentName: Hombro.L
+      position: {x: 0.0007210527, y: 0.01171681, z: 0.0068324516}
+      rotation: {x: -0.13293956, y: -0.23998769, z: -0.39858288, w: 0.875137}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: Ala superior.L
+      parentName: Ala inferior.L
+      position: {x: 5.727634e-10, y: 0.019518724, z: -5.7742e-10}
+      rotation: {x: 0.044637278, y: 0.05345756, z: -0.0306351, w: 0.9971015}
+      scale: {x: 0.99999994, y: 1.0000001, z: 1}
+    - name: Inicio de brazo.L
+      parentName: Hombro.L
+      position: {x: 1.4901154e-10, y: 0.010113952, z: -7.105427e-17}
+      rotation: {x: 0.015408698, y: -0.087594904, z: -0.038550515, w: 0.99529076}
+      scale: {x: 1, y: 0.99999994, z: 0.9999999}
+    - name: Antebrazo.L
+      parentName: Inicio de brazo.L
+      position: {x: -3.5855918e-10, y: 0.0057909, z: 2.6077032e-10}
+      rotation: {x: -0.017003667, y: 0.0047431435, z: 0.11658501, w: 0.9930239}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+    - name: brazo.L
+      parentName: Antebrazo.L
+      position: {x: -7.683411e-11, y: 0.009346647, z: -2.4680047e-10}
+      rotation: {x: -0.012310913, y: 0.030500192, z: 0.020841466, w: 0.9992416}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Mano.L
+      parentName: brazo.L
+      position: {x: 4.1909515e-10, y: 0.01363921, z: 5.9604643e-10}
+      rotation: {x: -0.12980069, y: 0.027812243, z: 0.016691787, w: 0.9910094}
+      scale: {x: 1, y: 1, z: 0.9999998}
+    - name: Enlase de dedo 4.L
+      parentName: Mano.L
+      position: {x: 9.173527e-10, y: 0.0021758282, z: -2.9802322e-10}
+      rotation: {x: 0.22146773, y: -0.06944707, z: -0.15038759, w: 0.96099573}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: dedo inicial 4.L
+      parentName: Enlase de dedo 4.L
+      position: {x: -0.0000000014156103, y: 0.0011164177, z: -3.5390257e-10}
+      rotation: {x: -0.15398781, y: 0.021236556, z: 0.04846946, w: 0.9866547}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: dedo final 4.L
+      parentName: dedo inicial 4.L
+      position: {x: 0.000000001117587, y: 0.0010075822, z: 8.9406965e-10}
+      rotation: {x: -0.23287582, y: 0.04739549, z: -0.025289536, w: 0.9710216}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: Ensale de dedo 1.L
+      parentName: Mano.L
+      position: {x: 9.173527e-10, y: 0.0021758282, z: -2.9802322e-10}
+      rotation: {x: 0.032775726, y: -0.0028908213, z: 0.00337395, w: -0.9994529}
+      scale: {x: 1, y: 0.99999994, z: 0.9999998}
+    - name: dedo inicial 1.L
+      parentName: Ensale de dedo 1.L
+      position: {x: 2.9802322e-10, y: 0.0011503786, z: 0}
+      rotation: {x: 0.015608338, y: 0.08101089, z: 0.0053261844, w: 0.9965768}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: dedo final 1.L
+      parentName: dedo inicial 1.L
+      position: {x: -0.0000000018440186, y: 0.0007371767, z: -6.61239e-10}
+      rotation: {x: 0.40409097, y: -0.05080399, z: -0.04415892, w: 0.9122387}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ensale de dedo 2.L
+      parentName: Mano.L
+      position: {x: 9.173527e-10, y: 0.0021758282, z: -2.9802322e-10}
+      rotation: {x: -0.060863413, y: 0.105373435, z: -0.016364032, w: 0.99243355}
+      scale: {x: 0.9999999, y: 0.99999994, z: 0.9999998}
+    - name: dedo inicial 2.L
+      parentName: Ensale de dedo 2.L
+      position: {x: 6.3329936e-10, y: 0.0007303025, z: -7.45058e-10}
+      rotation: {x: 0.022265851, y: -0.039651338, z: 0.0006089226, w: 0.9989653}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: dedo final 2.L
+      parentName: dedo inicial 2.L
+      position: {x: 0.0000000014528632, y: 0.0009486955, z: -5.9604643e-10}
+      rotation: {x: -0.22093332, y: 0.027758118, z: -0.0035444486, w: 0.97488743}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ensale de dedo 3.L
+      parentName: Mano.L
+      position: {x: 9.173527e-10, y: 0.0021758282, z: -2.9802322e-10}
+      rotation: {x: -0.016956253, y: 0.0020865796, z: -0.0791105, w: 0.9967194}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+    - name: dedo incial 3.L
+      parentName: Ensale de dedo 3.L
+      position: {x: 1.11758706e-10, y: 0.0007359421, z: 2.9802322e-10}
+      rotation: {x: -0.015988268, y: 0.0025928281, z: 0.000270025, w: 0.9998688}
+      scale: {x: 0.9999999, y: 1.0000001, z: 0.9999999}
+    - name: dedo final 3.L
+      parentName: dedo incial 3.L
+      position: {x: -7.4505804e-11, y: 0.0009840708, z: -2.9802322e-10}
+      rotation: {x: -0.16703734, y: 0.02281765, z: -0.0014799116, w: 0.9856854}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hombro.R
+      parentName: Hueso.013
+      position: {x: -0, y: 0.005119073, z: 0}
+      rotation: {x: 0.00000011133067, y: -0.00000007170442, z: 0.7780316, w: 0.62822527}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ala inferior.R
+      parentName: Hombro.R
+      position: {x: -0.0007210539, y: 0.01171681, z: 0.0068324525}
+      rotation: {x: -0.12826344, y: 0.2300903, z: 0.41390744, w: 0.8713711}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: Ala superior.R
+      parentName: Ala inferior.R
+      position: {x: 0.0000000010617077, y: 0.019518722, z: 8.5681673e-10}
+      rotation: {x: 0.044637278, y: -0.05345755, z: 0.030635098, w: 0.9971015}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Inicio de brazo.R
+      parentName: Hombro.R
+      position: {x: -1.4901154e-10, y: 0.010113952, z: -7.105427e-17}
+      rotation: {x: 0.0044215056, y: 0.021404818, z: 0.036383595, w: 0.9990989}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: Antebrazo.R
+      parentName: Inicio de brazo.R
+      position: {x: 6.1059835e-10, y: 0.005790901, z: -4.6566126e-11}
+      rotation: {x: -0.027486965, y: -0.0039180084, z: -0.1133743, w: 0.99316436}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: brazo.R
+      parentName: Antebrazo.R
+      position: {x: -6.693881e-10, y: 0.009346646, z: 3.7252902e-11}
+      rotation: {x: -0.012255257, y: -0.029026382, z: -0.01727966, w: 0.9993541}
+      scale: {x: 0.99999994, y: 1.0000001, z: 0.99999994}
+    - name: Mano.R
+      parentName: brazo.R
+      position: {x: 0.0000000011362136, y: 0.0134568745, z: -2.2351741e-10}
+      rotation: {x: -0.11089058, y: -0.043327745, z: -0.07108949, w: 0.99033946}
+      scale: {x: 0.9999999, y: 0.99999994, z: 0.9999999}
+    - name: Enlase de dedo 4.R
+      parentName: Mano.R
+      position: {x: -0.0000000021606683, y: 0.002408841, z: -2.9802322e-10}
+      rotation: {x: 0.20296891, y: 0.09098323, z: 0.23599182, w: 0.9459564}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: dedo inicial 4.R
+      parentName: Enlase de dedo 4.R
+      position: {x: -0.0000000017136335, y: 0.0011164157, z: 1.4901161e-10}
+      rotation: {x: -0.1539878, y: -0.021236522, z: -0.048469447, w: 0.9866547}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: dedo final 4.R
+      parentName: dedo inicial 4.R
+      position: {x: 0.0000000011920929, y: 0.0010075825, z: -1.4901161e-10}
+      rotation: {x: -0.23287578, y: -0.04739549, z: 0.025289537, w: 0.97102165}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ensale de dedo 1.R
+      parentName: Mano.R
+      position: {x: -0.0000000021606683, y: 0.002408841, z: -2.9802322e-10}
+      rotation: {x: 0.03183593, y: 0.17675142, z: -0.004780814, w: -0.98372895}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: dedo inicial 1.R
+      parentName: Ensale de dedo 1.R
+      position: {x: 0.0000000013038516, y: 0.0011503762, z: -0.0000000011920929}
+      rotation: {x: 0.015610577, y: -0.08101015, z: -0.0053275065, w: 0.99657685}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1}
+    - name: dedo final 1.R
+      parentName: dedo inicial 1.R
+      position: {x: 0.0000000032037495, y: 0.00073717616, z: -0.0000000010803342}
+      rotation: {x: 0.4040911, y: 0.05080404, z: 0.044158924, w: 0.91223866}
+      scale: {x: 0.99999994, y: 0.9999998, z: 0.9999999}
+    - name: Ensale de dedo 2.R
+      parentName: Mano.R
+      position: {x: -0.0000000021606683, y: 0.002408841, z: -2.9802322e-10}
+      rotation: {x: -0.056120172, y: -0.151769, z: 0.02511726, w: 0.9865018}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
+    - name: dedo inicial 2.R
+      parentName: Ensale de dedo 2.R
+      position: {x: -0.0000000018579885, y: 0.0007303026, z: -0.0000000014156103}
+      rotation: {x: 0.022262923, y: 0.039650008, z: -0.00060501555, w: 0.99896544}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: dedo final 2.R
+      parentName: dedo inicial 2.R
+      position: {x: 9.359792e-10, y: 0.0009486943, z: -5.9604643e-10}
+      rotation: {x: -0.22093323, y: -0.027758114, z: 0.003544446, w: 0.97488743}
+      scale: {x: 0.9999998, y: 0.99999994, z: 1.0000001}
+    - name: Ensale de dedo 3.R
+      parentName: Mano.R
+      position: {x: -0.0000000021606683, y: 0.002408841, z: -2.9802322e-10}
+      rotation: {x: -0.013323359, y: -0.0030733794, z: 0.07504463, w: 0.99708647}
+      scale: {x: 1, y: 1, z: 1}
+    - name: dedo incial 3.R
+      parentName: Ensale de dedo 3.R
+      position: {x: 0.0000000013597309, y: 0.0007359436, z: 0}
+      rotation: {x: -0.015988296, y: -0.0025928372, z: -0.00027003104, w: 0.9998688}
+      scale: {x: 0.99999994, y: 1, z: 0.9999999}
+    - name: dedo final 3.R
+      parentName: dedo incial 3.R
+      position: {x: 0.0000000010617077, y: 0.0009840718, z: -5.9604643e-10}
+      rotation: {x: -0.16703731, y: -0.02281763, z: 0.0014799135, w: 0.9856854}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Pistol.003
+      parentName: Mano.R
+      position: {x: -0.0030059838, y: 0.0016104017, z: -0.0031945514}
+      rotation: {x: 0.5161146, y: -0.3524968, z: -0.45068708, w: 0.6373797}
+      scale: {x: 0.25370842, y: 0.25370845, z: 0.25370842}
     - name: Hueso.002
       parentName: Hueso.013
       position: {x: -0, y: 0.005119073, z: 0}
@@ -588,201 +875,6 @@ ModelImporter:
       position: {x: 8.470329e-24, y: 0.0026049733, z: 3.5527136e-17}
       rotation: {x: -0.65828335, y: 2.130495e-15, z: 0.00000015694697, w: 0.75277025}
       scale: {x: 1, y: 0.99999994, z: 1}
-    - name: Hombro.L
-      parentName: Hueso.013
-      position: {x: -0, y: 0.005119073, z: 0}
-      rotation: {x: 0.00000011133067, y: 0.00000007170442, z: -0.7780316, w: 0.62822527}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Inicio de brazo.L
-      parentName: Hombro.L
-      position: {x: 1.4901154e-10, y: 0.010113952, z: -7.105427e-17}
-      rotation: {x: 0.015408698, y: -0.087594904, z: -0.038550515, w: 0.99529076}
-      scale: {x: 1, y: 0.99999994, z: 0.9999999}
-    - name: Antebrazo.L
-      parentName: Inicio de brazo.L
-      position: {x: -3.5855918e-10, y: 0.0057909, z: 2.6077032e-10}
-      rotation: {x: -0.017003667, y: 0.0047431435, z: 0.11658501, w: 0.9930239}
-      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
-    - name: brazo.L
-      parentName: Antebrazo.L
-      position: {x: -7.683411e-11, y: 0.009346647, z: -2.4680047e-10}
-      rotation: {x: -0.012310912, y: 0.030500192, z: 0.020841464, w: 0.9992416}
-      scale: {x: 1, y: 1.0000001, z: 1}
-    - name: Mano.L
-      parentName: brazo.L
-      position: {x: 4.1909515e-10, y: 0.01363921, z: 5.9604643e-10}
-      rotation: {x: -0.12980069, y: 0.027812243, z: 0.016691787, w: 0.9910094}
-      scale: {x: 1, y: 1, z: 0.9999998}
-    - name: Ensale de dedo 1.L
-      parentName: Mano.L
-      position: {x: 9.173527e-10, y: 0.0021758282, z: -2.9802322e-10}
-      rotation: {x: 0.032775726, y: -0.0028908213, z: 0.00337395, w: -0.9994529}
-      scale: {x: 1, y: 0.99999994, z: 0.9999998}
-    - name: dedo inicial 1.L
-      parentName: Ensale de dedo 1.L
-      position: {x: 2.9802322e-10, y: 0.0011503786, z: 0}
-      rotation: {x: 0.015608338, y: 0.08101089, z: 0.0053261844, w: 0.9965768}
-      scale: {x: 0.99999994, y: 1, z: 1}
-    - name: dedo final 1.L
-      parentName: dedo inicial 1.L
-      position: {x: -0.0000000018440186, y: 0.0007371767, z: -6.61239e-10}
-      rotation: {x: 0.40409097, y: -0.05080399, z: -0.04415892, w: 0.9122387}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Ensale de dedo 2.L
-      parentName: Mano.L
-      position: {x: 9.173527e-10, y: 0.0021758282, z: -2.9802322e-10}
-      rotation: {x: -0.060863413, y: 0.105373435, z: -0.016364032, w: 0.99243355}
-      scale: {x: 0.9999999, y: 0.99999994, z: 0.9999998}
-    - name: dedo inicial 2.L
-      parentName: Ensale de dedo 2.L
-      position: {x: 6.3329936e-10, y: 0.0007303025, z: -7.45058e-10}
-      rotation: {x: 0.022265851, y: -0.039651338, z: 0.0006089226, w: 0.9989653}
-      scale: {x: 0.99999994, y: 0.99999994, z: 1}
-    - name: dedo final 2.L
-      parentName: dedo inicial 2.L
-      position: {x: 0.0000000014528632, y: 0.0009486955, z: -5.9604643e-10}
-      rotation: {x: -0.22093332, y: 0.027758118, z: -0.0035444486, w: 0.97488743}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Ensale de dedo 3.L
-      parentName: Mano.L
-      position: {x: 9.173527e-10, y: 0.0021758282, z: -2.9802322e-10}
-      rotation: {x: -0.016956253, y: 0.0020865796, z: -0.0791105, w: 0.9967194}
-      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
-    - name: dedo incial 3.L
-      parentName: Ensale de dedo 3.L
-      position: {x: 1.11758706e-10, y: 0.0007359421, z: 2.9802322e-10}
-      rotation: {x: -0.015988268, y: 0.0025928281, z: 0.000270025, w: 0.9998688}
-      scale: {x: 0.9999999, y: 1.0000001, z: 0.9999999}
-    - name: dedo final 3.L
-      parentName: dedo incial 3.L
-      position: {x: -7.4505804e-11, y: 0.0009840708, z: -2.9802322e-10}
-      rotation: {x: -0.16703734, y: 0.02281765, z: -0.0014799116, w: 0.9856854}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Enlase de dedo 4.L
-      parentName: Mano.L
-      position: {x: 9.173527e-10, y: 0.0021758282, z: -2.9802322e-10}
-      rotation: {x: 0.22146773, y: -0.06944707, z: -0.15038759, w: 0.96099573}
-      scale: {x: 0.99999994, y: 0.99999994, z: 1}
-    - name: dedo inicial 4.L
-      parentName: Enlase de dedo 4.L
-      position: {x: -0.0000000014156103, y: 0.0011164177, z: -3.5390257e-10}
-      rotation: {x: -0.15398781, y: 0.021236556, z: 0.04846946, w: 0.9866547}
-      scale: {x: 0.99999994, y: 1, z: 0.99999994}
-    - name: dedo final 4.L
-      parentName: dedo inicial 4.L
-      position: {x: 0.000000001117587, y: 0.0010075822, z: 8.9406965e-10}
-      rotation: {x: -0.23287582, y: 0.04739549, z: -0.025289536, w: 0.9710216}
-      scale: {x: 1.0000001, y: 1, z: 1.0000001}
-    - name: Ala inferior.L
-      parentName: Hombro.L
-      position: {x: 0.0007210527, y: 0.01171681, z: 0.0068324516}
-      rotation: {x: -0.13293956, y: -0.23998769, z: -0.39858288, w: 0.875137}
-      scale: {x: 1, y: 1, z: 0.99999994}
-    - name: Ala superior.L
-      parentName: Ala inferior.L
-      position: {x: 5.727634e-10, y: 0.019518724, z: -5.7742e-10}
-      rotation: {x: 0.044637278, y: 0.05345756, z: -0.0306351, w: 0.9971015}
-      scale: {x: 0.99999994, y: 1.0000001, z: 1}
-    - name: Hombro.R
-      parentName: Hueso.013
-      position: {x: -0, y: 0.005119073, z: 0}
-      rotation: {x: 0.00000011133067, y: -0.00000007170442, z: 0.7780316, w: 0.62822527}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Inicio de brazo.R
-      parentName: Hombro.R
-      position: {x: -1.4901154e-10, y: 0.010113952, z: -7.105427e-17}
-      rotation: {x: 0.0044215056, y: 0.021404818, z: 0.036383595, w: 0.9990989}
-      scale: {x: 1, y: 1, z: 0.99999994}
-    - name: Antebrazo.R
-      parentName: Inicio de brazo.R
-      position: {x: 6.1059835e-10, y: 0.005790901, z: -4.6566126e-11}
-      rotation: {x: -0.027486965, y: -0.0039180084, z: -0.1133743, w: 0.99316436}
-      scale: {x: 1, y: 1, z: 0.99999994}
-    - name: brazo.R
-      parentName: Antebrazo.R
-      position: {x: -6.693881e-10, y: 0.009346646, z: 3.7252902e-11}
-      rotation: {x: -0.012255256, y: -0.029026382, z: -0.017279658, w: 0.9993541}
-      scale: {x: 0.99999994, y: 1.0000001, z: 0.99999994}
-    - name: Mano.R
-      parentName: brazo.R
-      position: {x: 0.0000000011362136, y: 0.0134568745, z: -2.2351741e-10}
-      rotation: {x: -0.11089058, y: -0.043327745, z: -0.07108949, w: 0.99033946}
-      scale: {x: 0.9999999, y: 0.99999994, z: 0.9999999}
-    - name: Pistol.003
-      parentName: Mano.R
-      position: {x: -0.0030059838, y: 0.0016104017, z: -0.0031945514}
-      rotation: {x: 0.5161146, y: -0.3524968, z: -0.45068708, w: 0.6373797}
-      scale: {x: 0.25370842, y: 0.25370845, z: 0.25370842}
-    - name: Ensale de dedo 1.R
-      parentName: Mano.R
-      position: {x: -0.0000000021606683, y: 0.002408841, z: -2.9802322e-10}
-      rotation: {x: 0.03183593, y: 0.17675142, z: -0.004780814, w: -0.98372895}
-      scale: {x: 0.9999999, y: 1, z: 1}
-    - name: dedo inicial 1.R
-      parentName: Ensale de dedo 1.R
-      position: {x: 0.0000000013038516, y: 0.0011503762, z: -0.0000000011920929}
-      rotation: {x: 0.015610577, y: -0.08101015, z: -0.0053275065, w: 0.99657685}
-      scale: {x: 0.9999999, y: 0.9999999, z: 1}
-    - name: dedo final 1.R
-      parentName: dedo inicial 1.R
-      position: {x: 0.0000000032037495, y: 0.00073717616, z: -0.0000000010803342}
-      rotation: {x: 0.4040911, y: 0.05080404, z: 0.044158924, w: 0.91223866}
-      scale: {x: 0.99999994, y: 0.9999998, z: 0.9999999}
-    - name: Ensale de dedo 2.R
-      parentName: Mano.R
-      position: {x: -0.0000000021606683, y: 0.002408841, z: -2.9802322e-10}
-      rotation: {x: -0.056120172, y: -0.151769, z: 0.02511726, w: 0.9865018}
-      scale: {x: 0.9999999, y: 1, z: 1.0000001}
-    - name: dedo inicial 2.R
-      parentName: Ensale de dedo 2.R
-      position: {x: -0.0000000018579885, y: 0.0007303026, z: -0.0000000014156103}
-      rotation: {x: 0.022262923, y: 0.039650008, z: -0.00060501555, w: 0.99896544}
-      scale: {x: 1, y: 0.99999994, z: 1}
-    - name: dedo final 2.R
-      parentName: dedo inicial 2.R
-      position: {x: 9.359792e-10, y: 0.0009486943, z: -5.9604643e-10}
-      rotation: {x: -0.22093323, y: -0.027758114, z: 0.003544446, w: 0.97488743}
-      scale: {x: 0.9999998, y: 0.99999994, z: 1.0000001}
-    - name: Ensale de dedo 3.R
-      parentName: Mano.R
-      position: {x: -0.0000000021606683, y: 0.002408841, z: -2.9802322e-10}
-      rotation: {x: -0.013323359, y: -0.0030733794, z: 0.07504463, w: 0.99708647}
-      scale: {x: 1, y: 1, z: 1}
-    - name: dedo incial 3.R
-      parentName: Ensale de dedo 3.R
-      position: {x: 0.0000000013597309, y: 0.0007359436, z: 0}
-      rotation: {x: -0.015988296, y: -0.0025928372, z: -0.00027003104, w: 0.9998688}
-      scale: {x: 0.99999994, y: 1, z: 0.9999999}
-    - name: dedo final 3.R
-      parentName: dedo incial 3.R
-      position: {x: 0.0000000010617077, y: 0.0009840718, z: -5.9604643e-10}
-      rotation: {x: -0.16703731, y: -0.02281763, z: 0.0014799135, w: 0.9856854}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Enlase de dedo 4.R
-      parentName: Mano.R
-      position: {x: -0.0000000021606683, y: 0.002408841, z: -2.9802322e-10}
-      rotation: {x: 0.20296891, y: 0.09098323, z: 0.23599182, w: 0.9459564}
-      scale: {x: 0.99999994, y: 1, z: 1}
-    - name: dedo inicial 4.R
-      parentName: Enlase de dedo 4.R
-      position: {x: -0.0000000017136335, y: 0.0011164157, z: 1.4901161e-10}
-      rotation: {x: -0.1539878, y: -0.021236522, z: -0.048469447, w: 0.9866547}
-      scale: {x: 0.99999994, y: 1, z: 1}
-    - name: dedo final 4.R
-      parentName: dedo inicial 4.R
-      position: {x: 0.0000000011920929, y: 0.0010075825, z: -1.4901161e-10}
-      rotation: {x: -0.23287578, y: -0.04739549, z: 0.025289537, w: 0.97102165}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Ala inferior.R
-      parentName: Hombro.R
-      position: {x: -0.0007210539, y: 0.01171681, z: 0.0068324525}
-      rotation: {x: -0.12826344, y: 0.2300903, z: 0.41390744, w: 0.8713711}
-      scale: {x: 1, y: 1, z: 0.99999994}
-    - name: Ala superior.R
-      parentName: Ala inferior.R
-      position: {x: 0.0000000010617077, y: 0.019518722, z: 8.5681673e-10}
-      rotation: {x: 0.044637278, y: -0.05345755, z: 0.030635098, w: 0.9971015}
-      scale: {x: 1, y: 1.0000001, z: 1}
     - name: Hueso.015
       parentName: Hueso.001
       position: {x: 1.4177063e-11, y: 0.0075422917, z: -0.0058157574}
@@ -818,66 +910,6 @@ ModelImporter:
       position: {x: 5.6791103e-16, y: 0.0074749826, z: 0.008540196}
       rotation: {x: 0.8356933, y: -0.30730125, z: 0.42099577, w: 0.17304693}
       scale: {x: 0.99999994, y: 0.99999994, z: 1}
-    - name: anclaje a pierna.L
-      parentName: Esqueleto.001
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.06117505, y: -0.061175004, z: -0.70445555, w: 0.70445555}
-      scale: {x: 1, y: 0.99999994, z: 1}
-    - name: muslo de pierna.L
-      parentName: anclaje a pierna.L
-      position: {x: -4.440892e-18, y: 0.005931848, z: -7.450581e-11}
-      rotation: {x: -0.7437289, y: 0.00000004920951, z: -0.00000019757348, w: 0.66848135}
-      scale: {x: 1, y: 1, z: 1.0000001}
-    - name: pierna.L
-      parentName: muslo de pierna.L
-      position: {x: -1.4210854e-16, y: 0.019064851, z: 5.960471e-10}
-      rotation: {x: -0.0029369767, y: 0.00003626253, z: 0.010394346, w: 0.9999417}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Pies.L
-      parentName: pierna.L
-      position: {x: -6.984919e-12, y: 0.019909995, z: 8.047141e-10}
-      rotation: {x: -0.030295942, y: -0.0018474016, z: 0.031961624, w: 0.99902815}
-      scale: {x: 0.99999994, y: 1, z: 1}
-    - name: Dedob.L
-      parentName: Pies.L
-      position: {x: 2.561137e-10, y: 0.0028831337, z: -8.486677e-10}
-      rotation: {x: 0.019236254, y: 0.008057022, z: 0.44753754, w: 0.8940219}
-      scale: {x: 1, y: 1, z: 0.99999994}
-    - name: Dedoa.L
-      parentName: Pies.L
-      position: {x: 2.561137e-10, y: 0.0028831337, z: -8.486677e-10}
-      rotation: {x: -0.0037305711, y: 0.00000029738854, z: -0.5410373, w: 0.8409903}
-      scale: {x: 0.99999994, y: 0.9999999, z: 1}
-    - name: anclaje a pierna.R
-      parentName: Esqueleto.001
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.06117505, y: 0.061175004, z: 0.70445555, w: 0.70445555}
-      scale: {x: 1, y: 0.99999994, z: 1}
-    - name: muslo de pierna.R
-      parentName: anclaje a pierna.R
-      position: {x: 4.440892e-18, y: 0.005931848, z: -7.450581e-11}
-      rotation: {x: -0.7437289, y: -0.00000004920951, z: 0.00000019757348, w: 0.66848135}
-      scale: {x: 1, y: 1, z: 1.0000001}
-    - name: pierna.R
-      parentName: muslo de pierna.R
-      position: {x: 1.4210854e-16, y: 0.019064851, z: 5.960471e-10}
-      rotation: {x: -0.0029369767, y: -0.00003626253, z: -0.010394346, w: 0.9999417}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Pies.R
-      parentName: pierna.R
-      position: {x: 6.984919e-12, y: 0.019909995, z: 8.047141e-10}
-      rotation: {x: -0.030295942, y: 0.0018474016, z: -0.031961624, w: 0.99902815}
-      scale: {x: 0.99999994, y: 1, z: 1}
-    - name: Dedob.R
-      parentName: Pies.R
-      position: {x: -2.561137e-10, y: 0.0028831337, z: -8.486677e-10}
-      rotation: {x: 0.019236254, y: -0.008057022, z: -0.44753754, w: 0.8940219}
-      scale: {x: 1, y: 1, z: 0.99999994}
-    - name: Dedoa.R
-      parentName: Pies.R
-      position: {x: -2.561137e-10, y: 0.0028831337, z: -8.486677e-10}
-      rotation: {x: -0.0037305711, y: -0.00000029738854, z: 0.5410373, w: 0.8409903}
-      scale: {x: 0.99999994, y: 0.9999999, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
