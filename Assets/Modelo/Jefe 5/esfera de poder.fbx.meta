@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ff1722c4b754764459c920e62669dd50
+guid: 7ed4606bb9fbca04a8ba22d677811f25
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,32 +7,12 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.001
-    second: {fileID: 2100000, guid: f4cbda0d0b574c94ca226b0b29e0eaf1, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: color led
-    second: {fileID: 2100000, guid: 286fdabc571415f4397d85211a37d5d8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: crital
-    second: {fileID: 2100000, guid: 8aac20418d017054fa65baeaad4d860f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: nave
-    second: {fileID: 2100000, guid: 84ea4a09f1ca8ed4db46c940bd4668fc, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: ruleman
-    second: {fileID: 2100000, guid: cccb57a385057a94baa0124463568a0c, type: 2}
+      name: disparo
+    second: {fileID: 2100000, guid: 52dee4ce974731a46b3221e90d4e4995, type: 2}
   materials:
     materialImportMode: 2
-    materialName: 0
-    materialSearch: 1
+    materialName: 2
+    materialSearch: 0
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
@@ -122,7 +102,7 @@ ModelImporter:
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
