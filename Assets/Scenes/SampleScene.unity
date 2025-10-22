@@ -4131,6 +4131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1163763735}
   - component: {fileID: 1163763734}
+  - component: {fileID: 1163763736}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -4170,6 +4171,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1163763736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163763733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6ea994f3b10522cbb8b392af02a7711, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Texto: {fileID: 43625724}
+  combustible: 99
+  maxCombustible: 99
 --- !u!1 &1191844290
 GameObject:
   m_ObjectHideFlags: 0
@@ -4551,7 +4567,7 @@ Terrain:
   m_StaticShadowCaster: 0
   m_IgnoreQualitySettings: 0
   m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 2100000, guid: 594ea882c5a793440b60ff72d896021e, type: 2}
+  m_MaterialTemplate: {fileID: 2100000, guid: c6d38711520119c4e89ddf1ea6adc007, type: 2}
   m_BakeLightProbesForTrees: 1
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
@@ -4672,9 +4688,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 45e70618fed99e747a4acbad336e36ee, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1881742781}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 45e70618fed99e747a4acbad336e36ee, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1881742785}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 45e70618fed99e747a4acbad336e36ee, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1881742780}
@@ -5508,21 +5521,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.2326508, y: 1.8659592, z: 28.480276}
   m_Center: {x: 1.4292811, y: 0.5179795, z: 3.326856}
---- !u!114 &1881742785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1881742779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6ea994f3b10522cbb8b392af02a7711, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Texto: {fileID: 43625724}
-  combustible: 99
-  EsRobot: 0
 --- !u!1 &1932438614
 GameObject:
   m_ObjectHideFlags: 0
@@ -5828,9 +5826,6 @@ PrefabInstance:
       addedObject: {fileID: 1973401095}
     - targetCorrespondingSourceObject: {fileID: 7134565681104235934, guid: 01aec27a514ccdd4e95d9410f0ad2273, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1973401100}
-    - targetCorrespondingSourceObject: {fileID: 7134565681104235934, guid: 01aec27a514ccdd4e95d9410f0ad2273, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1973401099}
   m_SourcePrefab: {fileID: 100100000, guid: 01aec27a514ccdd4e95d9410f0ad2273, type: 3}
 --- !u!1 &1973401094 stripped
@@ -5906,21 +5901,6 @@ MonoBehaviour:
   puntoDisparo: {fileID: 510589810}
   vivo: 1
   velocidad: 2.5
---- !u!114 &1973401100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1973401094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6ea994f3b10522cbb8b392af02a7711, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Texto: {fileID: 43625724}
-  combustible: 99
-  EsRobot: 1
 --- !u!1 &2133695562
 GameObject:
   m_ObjectHideFlags: 0

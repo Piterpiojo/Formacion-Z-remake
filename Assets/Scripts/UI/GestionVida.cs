@@ -25,7 +25,7 @@ public class GestionVida : MonoBehaviour
             perder();
         }
     }
-    void perder()
+    public void perder()
     {
         PantallaDerrota.SetActive(true);
     }

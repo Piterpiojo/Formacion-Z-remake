@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CrtlJugadorRobot : MonoBehaviour
@@ -62,11 +63,12 @@ public class CrtlJugadorRobot : MonoBehaviour
     }
     void disparar()
     {
-        if (GameManager.instancia.balas <3){
+        if (GameManager.instancia.balas < 3)
+        {
             Instantiate(balaPrefab, puntoDisparo.transform.position + puntoDisparo.transform.forward * 2, puntoDisparo.transform.rotation);
-            GameManager.instancia.balas+=1;
+            GameManager.instancia.balas += 1;
         }
-       
+
     }
     void saltar()
     {
@@ -106,7 +108,9 @@ public class CrtlJugadorRobot : MonoBehaviour
 
         anim.SetTrigger("transformar");
         GameManager.instancia.volando = true;
+
         StartCoroutine("EsperarTransformacion");
+
 
     }
 
@@ -116,6 +120,7 @@ public class CrtlJugadorRobot : MonoBehaviour
         avion.SetActive(true);
         avion.transform.position = transform.position;
         gameObject.SetActive(false);
+        GameManager.instancia.GetCtrlCombustiible().inicarConsumo();
     }
 
     void OnTriggerEnter(Collider other)
@@ -123,9 +128,18 @@ public class CrtlJugadorRobot : MonoBehaviour
         if (other.gameObject.tag == "Enemigo")
         {
             GestionVida.instancia.recibir_danio(1);
-            Destroy(other);
+            Destroy(other.gameObject);
         }
     }
-    
-    
+
+   void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("agua"))
+        {
+            Destroy(gameObject);
+            GestionVida.instancia.perder();
+        }
+    }
+
+
 }

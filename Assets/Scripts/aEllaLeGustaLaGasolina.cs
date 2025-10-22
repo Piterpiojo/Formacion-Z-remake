@@ -25,7 +25,7 @@ public class aEllaLeGustaLaGasolina : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<CtrlCombustiible>().Recargar(10);
+            GameManager.instancia.GetCtrlCombustiible().Recargar(10);
             Destroy(gameObject);
         }
     }
@@ -34,7 +34,7 @@ public class aEllaLeGustaLaGasolina : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<CtrlCombustiible>().Recargar(10);
+            GameManager.instancia.GetCtrlCombustiible().Recargar(10);
             Destroy(gameObject);
 
         }

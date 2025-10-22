@@ -27,7 +27,7 @@ public class AguaCheck : MonoBehaviour
         {
             if (jefazo != null)
             {
-                GameManager.instancia.jugador.GetComponent<CtrlCombustiible>().deshabilitarConsumo();
+                GameManager.instancia.GetCtrlCombustiible().deshabilitarConsumo();
                 deshabilitar_todos();
                 jefazo.SetActive(true);
                 

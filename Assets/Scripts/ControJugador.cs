@@ -69,6 +69,7 @@ public class ControJugador : MonoBehaviour
         if (collision.gameObject.CompareTag("Piso"))
         {
             Destroy(gameObject);
+            GestionVida.instancia.perder();
         }
     }
 
@@ -83,9 +84,11 @@ public class ControJugador : MonoBehaviour
     void transformar()
     {
         GameManager.instancia.volando = false;
+        GameManager.instancia.GetCtrlCombustiible().deshabilitarConsumo();
         robot.SetActive(true);
         robot.transform.position = transform.position;
         gameObject.SetActive(false);
+       
     }
     
         void OnTriggerEnter(Collider other)
@@ -93,7 +96,7 @@ public class ControJugador : MonoBehaviour
         if (other.gameObject.tag == "Enemigo")
         {
             GestionVida.instancia.recibir_danio(1);
-            Destroy(other);
+            Destroy(other.gameObject);
         }
     }
 }
