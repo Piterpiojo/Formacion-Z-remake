@@ -152,6 +152,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   efect:
-  - {fileID: 9072304001593974594, guid: 79751c0404a268d1da0be5e5575ebde7, type: 3}
+  - {fileID: 100008, guid: 7b346dd5b9c872e4f811ddc8000908a1, type: 3}
   - {fileID: 394357774696525417, guid: c1ad959a528a9d36a885e85e90a6fc2b, type: 3}
+  - {fileID: 100008, guid: a09fc9d98d9a5bd4088577d6b5c31870, type: 3}
+  - {fileID: 100008, guid: f55f0defa3c68c1498d7f9cae620bc19, type: 3}
+  - {fileID: 100008, guid: 3b686fba4d2064d45a9c7b808cd79755, type: 3}
+  - {fileID: 100010, guid: 6abcdaf8c8fd61b4697e96e8a1138d29, type: 3}
   velocidad: 40

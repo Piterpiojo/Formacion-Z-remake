@@ -13,7 +13,7 @@ public class GenerarDisparador : MonoBehaviour
     void Start()
     {
 
-        esperar(20f);
+        StartCoroutine(esperar(20f));
     }
 
 

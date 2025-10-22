@@ -26,13 +26,13 @@ public class Disparo : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemigo"))
         {
             Destroy(collision.gameObject);
-            Destroy(Instantiate(efect[1], transform.position, Quaternion.identity), 1f);
+            animExpplosion();
             Destroy(gameObject);
         }
         if (collision.gameObject.CompareTag("jefe"))
         {
             collision.gameObject.GetComponent<SaludEnemigo>().recibirDanio();
-             Destroy(Instantiate(efect[0], transform.position, Quaternion.identity), 1f);
+            Destroy(Instantiate(efect[0], transform.position, Quaternion.identity), 1f);
             Destroy(gameObject);
         }
     }
@@ -43,18 +43,22 @@ public class Disparo : MonoBehaviour
         if (other.gameObject.CompareTag("Enemigo"))
         {
             Destroy(other.gameObject);
-             Destroy(Instantiate(efect[1], transform.position, Quaternion.identity), 1f);
+            animExpplosion();
             Destroy(gameObject);
         }
         else if (other.gameObject.CompareTag("jefe"))
         {
             other.GetComponent<SaludEnemigo>().recibirDanio();
-             Destroy(Instantiate(efect[0], transform.position, Quaternion.identity), 1f);
-             Destroy(gameObject);
+            Destroy(Instantiate(efect[0], transform.position, Quaternion.identity), 1f);
+            Destroy(gameObject);
         }
     }
 
-
+    void animExpplosion()
+    {
+        int num = Random.Range(0, efect.Count);
+        Destroy(Instantiate(efect[num], transform.position, Quaternion.identity), 1f);
+    }
     void OnDestroy()
     {
         GameManager.instancia.balas -= 1;
