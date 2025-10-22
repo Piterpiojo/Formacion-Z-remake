@@ -16,10 +16,18 @@ public class CtrlCombustiible : MonoBehaviour
 
     void Start()
     {
-        Texto.text =combustible.ToString("00");
+        Texto.text = combustible.ToString("00");
 
-        
 
+
+    }
+    
+    public void deshabilitarConsumo()
+    {
+        if (consumo != null)
+        {
+            StopCoroutine(consumo);
+        }
     }
 private void OnEnable() {
             if (!EsRobot)
