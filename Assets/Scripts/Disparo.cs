@@ -6,12 +6,12 @@ public class Disparo : MonoBehaviour
     Rigidbody rb;
     public List<GameObject> efect = new List<GameObject>();
     public float velocidad = 40f;
-
+    AudioSource audio;
     void Start()
     {
 
         rb = GetComponent<Rigidbody>();
-
+        audio = GetComponent<AudioSource>();
         Destroy(gameObject, 0.7f);
     }
 
@@ -25,9 +25,12 @@ public class Disparo : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemigo"))
         {
+       
+            audio.Play();
             Destroy(collision.gameObject);
             animExpplosion();
-            Destroy(gameObject);
+            
+            Destroy(gameObject,1);
         }
         if (collision.gameObject.CompareTag("jefe"))
         {
@@ -42,6 +45,7 @@ public class Disparo : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemigo"))
         {
+            audio.Play();
             Destroy(other.gameObject);
             animExpplosion();
             Destroy(gameObject);

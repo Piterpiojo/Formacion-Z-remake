@@ -7,11 +7,12 @@ public class ElQueVuela : MonoBehaviour
     Vector3 posJugador;
 
     public float velocidad= -300f;
-
+    AudioSource audio;
     [SerializeField]
     bool salta = true;
     void Start()
     {
+        audio = GetComponent<AudioSource>();
         camera = Camera.main;
         rb = GetComponent<Rigidbody>();
         posJugador = camera.WorldToViewportPoint(GameManager.instancia.jugador.transform.position);
@@ -32,6 +33,7 @@ public class ElQueVuela : MonoBehaviour
              rb.linearVelocity = new Vector3(velocidad,0,0) * Time.deltaTime;
         }
     }
+
 
 
 

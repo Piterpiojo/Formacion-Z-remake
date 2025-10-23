@@ -15,6 +15,8 @@ public class CrtlJugadorRobot : MonoBehaviour
     float limitey = 0.2f;
     public GameObject puntoDisparo;
 
+    AudioSource audio;
+
     public bool vivo = true;
 
     Animator anim;
@@ -24,6 +26,7 @@ public class CrtlJugadorRobot : MonoBehaviour
         controles = new InputSystem_Actions();
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
+        audio = GetComponent<AudioSource>();
 
     }
 
@@ -67,6 +70,7 @@ public class CrtlJugadorRobot : MonoBehaviour
         {
             Instantiate(balaPrefab, puntoDisparo.transform.position + puntoDisparo.transform.forward * 2, puntoDisparo.transform.rotation);
             GameManager.instancia.balas += 1;
+            audio.Play();
         }
 
     }

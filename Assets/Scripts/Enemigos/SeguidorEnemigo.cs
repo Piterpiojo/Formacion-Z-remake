@@ -3,9 +3,10 @@ using UnityEngine;
 
 public class SeguidorEnemigo : MonoBehaviour
 {
-
+    AudioSource audio;
     void Start()
     {
+        audio = GetComponent<AudioSource>();
         Destroy(gameObject, 8f);
     }
     void OnCollisionEnter(Collision collision)
@@ -15,4 +16,5 @@ public class SeguidorEnemigo : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
 }

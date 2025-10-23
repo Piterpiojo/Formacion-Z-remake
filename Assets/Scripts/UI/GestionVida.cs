@@ -10,10 +10,11 @@ public class GestionVida : MonoBehaviour
     {
         instancia = this;
         text = GetComponent<TextMeshProUGUI>();
+        actualizar();
     }
 
 
-    int vida = 3;
+    int vida = 10;
 
 
     public void recibir_danio(int cantidad)

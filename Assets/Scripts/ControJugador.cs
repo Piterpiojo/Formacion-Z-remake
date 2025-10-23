@@ -19,11 +19,14 @@ public class ControJugador : MonoBehaviour
 
     Animator anim;
     public float velocidad = 25f;
+
+    AudioSource audio;
     void Awake()
     {
         controles = new InputSystem_Actions();
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
+        audio = GetComponent<AudioSource>();
 
     }
 
@@ -61,10 +64,14 @@ public class ControJugador : MonoBehaviour
 
     void disparar()
     {
-        Instantiate(balaPrefab, puntoDisparo.transform.position + puntoDisparo.transform.forward * 2, puntoDisparo.transform.rotation);
+        if (GameManager.instancia.balas < 3)
+        {
+            Instantiate(balaPrefab, puntoDisparo.transform.position + puntoDisparo.transform.forward * 2, puntoDisparo.transform.rotation);
+            GameManager.instancia.balas += 1;
+            audio.Play();
+        }
     }
-
-    void OnCollisionEnter(Collision collision)
+        void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Piso"))
         {

@@ -65,8 +65,8 @@ public class CtrlCombustiible : MonoBehaviour
         }
         else if (combustible <= 0f)
         {
-            gameObject.GetComponent<ControJugador>().vivo = false;
-            gameObject.GetComponent<ControJugador>().FaltaCombustible();
+            GameManager.instancia.jugador.GetComponent<ControJugador>().vivo = false;
+            GameManager.instancia.jugador.GetComponent<ControJugador>().FaltaCombustible();
         }
 
 
