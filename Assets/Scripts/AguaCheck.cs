@@ -14,9 +14,9 @@ public class AguaCheck : MonoBehaviour
         if (jefe && jefazo != null)
         {
             jefazo = GameObject.FindGameObjectWithTag("jefe");
-
+            jefazo.SetActive(false);
         }
-        jefazo.SetActive(false);
+
     }
     void OnTriggerEnter(Collider other)
     {
@@ -24,22 +24,22 @@ public class AguaCheck : MonoBehaviour
         if (other.CompareTag("Player") && !jefe)
         {
             deshabilitar();
-  
+
 
         }
         if (other.CompareTag("Player") && jefe)
         {
- 
-                GameManager.instancia.GetCtrlCombustiible().deshabilitarConsumo();
-                deshabilitar_todos();
-                jefazo.SetActive(true);
-                
-            
+
+            GameManager.instancia.GetCtrlCombustiible().deshabilitarConsumo();
+            deshabilitar_todos();
+            jefazo.SetActive(true);
+
+
         }
     }
 
 
-            void deshabilitar()
+    void deshabilitar()
     {
         foreach (GameObject spawn in spawns_agua)
         {
