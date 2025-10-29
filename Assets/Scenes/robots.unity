@@ -146,6 +146,78 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1001 &11871890
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2546
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2546
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2546
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 37.52
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 38.866
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -15.094
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+      propertyPath: m_Name
+      value: Nave honguito
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 65702495048144492, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+    - {fileID: -8700617353114198275, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+    - {fileID: 7368184300715620164, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
 --- !u!1001 &12252942
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -383,75 +455,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45e70618fed99e747a4acbad336e36ee, type: 3}
---- !u!1001 &321177703
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 8ed1eb17f8a81344ba83fb38b279d506, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.5091
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8ed1eb17f8a81344ba83fb38b279d506, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.5091
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8ed1eb17f8a81344ba83fb38b279d506, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.5091
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8ed1eb17f8a81344ba83fb38b279d506, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 38.8
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8ed1eb17f8a81344ba83fb38b279d506, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 37.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8ed1eb17f8a81344ba83fb38b279d506, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -17.7
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8ed1eb17f8a81344ba83fb38b279d506, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8ed1eb17f8a81344ba83fb38b279d506, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8ed1eb17f8a81344ba83fb38b279d506, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8ed1eb17f8a81344ba83fb38b279d506, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8ed1eb17f8a81344ba83fb38b279d506, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8ed1eb17f8a81344ba83fb38b279d506, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8ed1eb17f8a81344ba83fb38b279d506, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 8ed1eb17f8a81344ba83fb38b279d506, type: 3}
-      propertyPath: m_Name
-      value: nave hongo enemiga
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8ed1eb17f8a81344ba83fb38b279d506, type: 3}
 --- !u!1001 &342419652
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2184,7 +2187,6 @@ SceneRoots:
   - {fileID: 2146723550}
   - {fileID: 1999853452}
   - {fileID: 210621567}
-  - {fileID: 321177703}
   - {fileID: 342419652}
   - {fileID: 803656482}
   - {fileID: 1837816031}
@@ -2196,3 +2198,4 @@ SceneRoots:
   - {fileID: 1013696397}
   - {fileID: 565171752}
   - {fileID: 1669122587}
+  - {fileID: 11871890}
