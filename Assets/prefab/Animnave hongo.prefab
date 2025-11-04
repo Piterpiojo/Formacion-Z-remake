@@ -104,11 +104,16 @@ PrefabInstance:
       value: Enemigo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: -1203114344724627764, guid: c4f675583aed5d844b770ffda93b5d97, type: 3}
+    - {fileID: -2665077149888147841, guid: c4f675583aed5d844b770ffda93b5d97, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c4f675583aed5d844b770ffda93b5d97, type: 3}
       insertIndex: -1
       addedObject: {fileID: 126781305986816631}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c4f675583aed5d844b770ffda93b5d97, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5618620381421390455}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c4f675583aed5d844b770ffda93b5d97, type: 3}
       insertIndex: -1
@@ -318,3 +323,68 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1001 &5364877917448383900
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 404738579889457889}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+      propertyPath: m_Name
+      value: Nave honguito
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: -8700617353114198275, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+    - {fileID: 7368184300715620164, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+    - {fileID: 65702495048144492, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+--- !u!4 &5618620381421390455 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 78f0a91408a70d646bc7938ade8c501d, type: 3}
+  m_PrefabInstance: {fileID: 5364877917448383900}
+  m_PrefabAsset: {fileID: 0}

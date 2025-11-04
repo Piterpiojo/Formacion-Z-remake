@@ -4,6 +4,9 @@ public class jefe1 : MonoBehaviour
 {
     [SerializeField] private GameObject[]  puntoDisparo;
     [SerializeField] private GameObject bala;
+
+    [SerializeField] float min = 0.1f;
+    [SerializeField] float max = 0.4f;
     int i = 0;
     void Start()
     {
@@ -26,14 +29,14 @@ public class jefe1 : MonoBehaviour
         {
 
             crearBala();
-            yield return new WaitForSeconds(Random.Range(0.1f, .4f));
+            yield return new WaitForSeconds(Random.Range(min, max));
         }
     }
 
 
     int disparos()
     {
-        if (i < 2)
+        if (i < puntoDisparo.Length - 1)
         {
             i++;
         }
