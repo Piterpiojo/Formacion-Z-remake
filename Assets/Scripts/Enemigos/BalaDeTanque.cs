@@ -3,7 +3,7 @@ using UnityEngine;
 public class BalaDeTanque : MonoBehaviour
 {
     Rigidbody rb;
-    float velocidad = -10f;
+    [SerializeField]float velocidad = -10f;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
