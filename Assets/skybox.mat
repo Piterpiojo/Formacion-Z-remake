@@ -24,14 +24,15 @@ Material:
   m_Shader: {fileID: 108, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _MAPPING_6_FRAMES_LAYOUT
   m_InvalidKeywords:
-  - _MAPPING_LATITUDE_LONGITUDE_LAYOUT
+  - _MIRRORONBACK_ON
   - _SUNDISK_HIGH_QUALITY
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2000
   stringTagMap: {}
   disabledShaderPasses:
   - MOTIONVECTORS
@@ -113,20 +114,20 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
-    - _Exposure: 1
+    - _Exposure: 1.51
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _ImageType: 0
-    - _Layout: 0
-    - _Mapping: 1
+    - _Layout: 1
+    - _Mapping: 0
     - _Metallic: 0
-    - _MirrorOnBack: 0
+    - _MirrorOnBack: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Rotation: 0
+    - _Rotation: 71
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -145,6 +146,6 @@ Material:
     - _GroundColor: {r: 0.36899996, g: 0.34899998, b: 0.34099993, a: 1}
     - _SkyTint: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _Tint: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+    - _Tint: {r: 0.381132, g: 0.21817732, b: 0.10858667, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
