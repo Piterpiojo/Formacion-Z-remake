@@ -1,5 +1,4 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class CrtlJugadorRobot : MonoBehaviour
@@ -32,13 +31,13 @@ public class CrtlJugadorRobot : MonoBehaviour
 
     void OnEnable()
     {
-       // GameManager.instancia.Velocidad(-5f);
-        //GameManager.instancia.CambiarObjetivo(transform);
+
         controles.Enable();
         controles.Player.Attack.performed += ctx => disparar();
         controles.Player.Jump.performed += ctx => saltar();
         controles.Player.Transformar.performed += ctx => transformar();
-        //anim.SetTrigger("caer");
+        StartCoroutine("EsperarUnRato");
+
     }
 
     void OnDisable()
@@ -61,7 +60,7 @@ public class CrtlJugadorRobot : MonoBehaviour
         }
         Vector2 dir = new Vector2(direcciones.x, 0);
 
-        rb.AddForce(dir.normalized * velocidad, ForceMode.Impulse);
+        rb.AddForce(dir.normalized * velocidad, ForceMode.Force);
         controlarApuntado(direcciones.y);
     }
     void disparar()
@@ -78,8 +77,7 @@ public class CrtlJugadorRobot : MonoBehaviour
     {
         if (enSuelo())
         {
-            Debug.Log("saltando");
-            rb.AddForce(Vector3.up * 8, ForceMode.Impulse);
+            rb.AddForce(Vector3.up * 10, ForceMode.Impulse);
         }
     }
 
@@ -118,6 +116,13 @@ public class CrtlJugadorRobot : MonoBehaviour
 
     }
 
+
+    IEnumerator EsperarUnRato()
+    {
+        yield return new WaitForSeconds(0.5f);
+        GameManager.instancia.Velocidad(-5f);
+        GameManager.instancia.CambiarObjetivo(transform);
+    }
     IEnumerator EsperarTransformacion()
     {
         yield return new WaitForSeconds(1f);
@@ -136,7 +141,7 @@ public class CrtlJugadorRobot : MonoBehaviour
         }
     }
 
-   void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("agua"))
         {
