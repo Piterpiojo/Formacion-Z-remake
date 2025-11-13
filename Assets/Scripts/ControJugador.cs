@@ -37,6 +37,7 @@ public class ControJugador : MonoBehaviour
         controles.Enable();
         controles.Player.Attack.performed += ctx => disparar();
         controles.Player.Transformar.performed += ctx => transformar();
+        GameManager.instancia.jugador = this.gameObject;
     }
 
     void OnDisable()

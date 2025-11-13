@@ -8,6 +8,7 @@ public class AguaCheck : MonoBehaviour
 
     [SerializeField] GameObject[] spawns_agua;
     [SerializeField] GameObject[] todos_spawns;
+    [SerializeField] GameObject edificios;
 
     void Start()
     {
@@ -35,6 +36,8 @@ public class AguaCheck : MonoBehaviour
             jefazo.SetActive(true);
 
 
+
+
         }
     }
 
@@ -45,6 +48,7 @@ public class AguaCheck : MonoBehaviour
         {
             spawn.SetActive(false);
         }
+        edificios.SetActive(false);
     }
 
     void deshabilitar_todos()

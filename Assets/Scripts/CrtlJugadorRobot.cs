@@ -37,6 +37,7 @@ public class CrtlJugadorRobot : MonoBehaviour
         controles.Player.Jump.performed += ctx => saltar();
         controles.Player.Transformar.performed += ctx => transformar();
         StartCoroutine("EsperarUnRato");
+        GameManager.instancia.jugador = this.gameObject;
 
     }
 
