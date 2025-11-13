@@ -50,6 +50,7 @@ public class CrtlJugadorRobot : MonoBehaviour
     void Update()
     {
         direcciones = controles.Player.Move.ReadValue<Vector2>();
+        anim.SetBool("caer", !enSuelo());
     }
 
     void FixedUpdate()
@@ -80,6 +81,7 @@ public class CrtlJugadorRobot : MonoBehaviour
         {
             rb.AddForce(Vector3.up * 10, ForceMode.Impulse);
         }
+
     }
 
     bool enSuelo()

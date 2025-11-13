@@ -6,6 +6,8 @@ public class Canion : MonoBehaviour
     [SerializeField] GameObject balaPrefab;
     [SerializeField] Transform puntoDisparo;
 
+    [SerializeField] float tiempoEntreDisparos = 2f;
+
     void Start()
     {
       StartCoroutine(EsperarYDisparar(2f));  
@@ -23,6 +25,6 @@ public class Canion : MonoBehaviour
 
         yield return new WaitForSeconds(segundos);
         Disparar();
-        StartCoroutine(EsperarYDisparar(2f));
+        StartCoroutine(EsperarYDisparar(tiempoEntreDisparos));
     }
 }
