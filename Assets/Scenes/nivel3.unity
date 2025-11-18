@@ -340,6 +340,7 @@ MonoBehaviour:
   - {fileID: 1834165323}
   - {fileID: 707954814}
   - {fileID: 1209813829}
+  edificios: {fileID: 0}
 --- !u!65 &137899954
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5030,6 +5031,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jefe 3
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f940d9f6d02ee3f438910a31f62ffa69, type: 3}
+      propertyPath: m_TagString
+      value: jefe
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -5040,6 +5045,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f940d9f6d02ee3f438910a31f62ffa69, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1774653226}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f940d9f6d02ee3f438910a31f62ffa69, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1774653228}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f940d9f6d02ee3f438910a31f62ffa69, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1774653227}
   m_SourcePrefab: {fileID: 100100000, guid: f940d9f6d02ee3f438910a31f62ffa69, type: 3}
 --- !u!1 &1563118222
 GameObject:
@@ -5267,6 +5278,41 @@ MonoBehaviour:
   tiempoCambio: 2
   mira: {fileID: 1563118222}
   prefab: {fileID: 5928073483264525936, guid: fad9cf1c47e51b348a91aa49d4646a0e, type: 3}
+--- !u!114 &1774653227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774653224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 717da671197b05849a038b2e4dda12af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  salud: 65
+  final: 1
+--- !u!65 &1774653228
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774653224}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 26.241531, y: 24.140942, z: 17.365076}
+  m_Center: {x: 12.620766, y: -6.8091784, z: 0.5681828}
 --- !u!1 &1834165323
 GameObject:
   m_ObjectHideFlags: 0
@@ -5803,6 +5849,7 @@ MonoBehaviour:
   - {fileID: 700309256}
   - {fileID: 1209813829}
   todos_spawns: []
+  edificios: {fileID: 0}
 --- !u!1 &1941014119 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4403578824947819841, guid: 2de69ba0427f3deea885dc843814e5d7, type: 3}

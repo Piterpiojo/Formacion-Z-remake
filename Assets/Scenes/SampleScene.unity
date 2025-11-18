@@ -1815,6 +1815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   salud: 18
+  final: 0
 --- !u!135 &340009516
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4677,7 +4678,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: GAY OVER
+  m_text: 'GAME OVER
+
+    NIVEL 2 EN CONTRUCCION'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2b4b4936e8290f04bbd6f72dcccfe7d7, type: 2}
   m_sharedMaterial: {fileID: 1459954817905956171, guid: 2b4b4936e8290f04bbd6f72dcccfe7d7, type: 2}
@@ -6487,7 +6490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c9d08d0e96f0f05f83f1559718afcca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: -10
+  velocidad: -15
 --- !u!1 &1876895464
 GameObject:
   m_ObjectHideFlags: 0

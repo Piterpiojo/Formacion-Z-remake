@@ -32,7 +32,7 @@ public class ControJugador : MonoBehaviour
 
     void OnEnable()
     {
-        GameManager.instancia.Velocidad(-15f);
+        GameManager.instancia.Velocidad(-20f);
         GameManager.instancia.CambiarObjetivo(transform);
         controles.Enable();
         controles.Player.Attack.performed += ctx => disparar();
@@ -74,7 +74,7 @@ public class ControJugador : MonoBehaviour
     }
         void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Piso"))
+        if (collision.gameObject.CompareTag("Piso") || collision.gameObject.CompareTag("agua"))
         {
             Destroy(gameObject);
             GestionVida.instancia.perder();

@@ -443,7 +443,7 @@ Transform:
   m_GameObject: {fileID: 137899950}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 30, y: 26.3695, z: 12}
+  m_LocalPosition: {x: 1622, y: 26.3695, z: 12}
   m_LocalScale: {x: 1, y: 52.42098, z: 9.094732}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -572,6 +572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   salud: 15
+  final: 0
 --- !u!1 &250027135
 GameObject:
   m_ObjectHideFlags: 0
@@ -5676,7 +5677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemigo: {fileID: 5703204119079986480, guid: 85079eec2c8fa7384b3939b34531ae1f, type: 3}
-  tiempoEntreSpawns: 18
+  tiempoEntreSpawns: 15
 --- !u!4 &700309258
 Transform:
   m_ObjectHideFlags: 0
@@ -5742,6 +5743,8 @@ MonoBehaviour:
   - {fileID: 2133695563}
   - {fileID: 847446379}
   - {fileID: 1342973250}
+  - {fileID: 869480774}
+  - {fileID: 757001160}
 --- !u!1 &725003429
 GameObject:
   m_ObjectHideFlags: 0
@@ -6659,7 +6662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemigo: {fileID: 1616502040868778140, guid: 6f44a753acd6d4b4d971c858e3077640, type: 3}
-  tiempoEntreSpawns: 11
+  tiempoEntreSpawns: 10
 --- !u!4 &743346620
 Transform:
   m_ObjectHideFlags: 0
@@ -7497,6 +7500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   salud: 50
+  final: 1
 --- !u!1 &847446378
 GameObject:
   m_ObjectHideFlags: 0
@@ -11908,7 +11912,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1191844291
 Transform:
   m_ObjectHideFlags: 0
@@ -12059,7 +12063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemigo: {fileID: 1416650676283295517, guid: ed3073d45a4df0e478cbda59965cb089, type: 3}
-  tiempoEntreSpawns: 12
+  tiempoEntreSpawns: 11
 --- !u!4 &1209813831
 Transform:
   m_ObjectHideFlags: 0
@@ -14375,6 +14379,9 @@ MonoBehaviour:
   - {fileID: 56188874}
   - {fileID: 1590404251}
   - {fileID: 1099863713}
+  - {fileID: 2088059760}
+  - {fileID: 2088059760}
+  - {fileID: 1096648284}
 --- !u!4 &1834165325
 Transform:
   m_ObjectHideFlags: 0
@@ -14464,6 +14471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   salud: 15
+  final: 0
 --- !u!1 &1871156521
 GameObject:
   m_ObjectHideFlags: 0
@@ -14593,7 +14601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direcciones: {x: 0, y: 0}
   balaPrefab: {fileID: 8490718242335529544, guid: 40392995d4496d5eb9d689ee146f9661, type: 3}
-  robot: {fileID: 0}
+  robot: {fileID: 1167367252}
   puntoDisparo: {fileID: 876346202}
   vivo: 1
   velocidad: 25
@@ -18481,7 +18489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemigo: {fileID: 5028005401144970772, guid: c5dcfbd86cd626f148b44c2ea814abf2, type: 3}
-  tiempoEntreSpawns: 7
+  tiempoEntreSpawns: 6.5
 --- !u!1001 &5004094919085856585
 PrefabInstance:
   m_ObjectHideFlags: 0
