@@ -17,7 +17,7 @@ public class CrtlJugadorRobot : MonoBehaviour
     AudioSource audio;
 
     public bool vivo = true;
-
+    Camera cam;
     Animator anim;
     public float velocidad = 25f;
     void Awake()
@@ -26,7 +26,7 @@ public class CrtlJugadorRobot : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
         audio = GetComponent<AudioSource>();
-
+        cam = Camera.main;
     }
 
     void OnEnable()
@@ -55,15 +55,23 @@ public class CrtlJugadorRobot : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!vivo) return;
-        if (transform.position.y > limiteX)
-        {
-            direcciones.y = -1;
-        }
-        Vector2 dir = new Vector2(direcciones.x, 0);
+    if (!vivo) return;
 
-        rb.AddForce(dir.normalized * velocidad, ForceMode.Force);
-        controlarApuntado(direcciones.y);
+    if (transform.position.y > limiteX)
+    {
+        direcciones.y = -1;
+    }
+
+    Vector2 dir = new Vector2(direcciones.x, 0);
+    rb.AddForce(dir.normalized * velocidad, ForceMode.Force);
+    controlarApuntado(direcciones.y);
+
+    // --- LIMITAR X AL VIEWPORT ---
+    Vector3 vp = cam.WorldToViewportPoint(rb.position);
+    vp.x = Mathf.Clamp(vp.x, 0.05f, 0.95f);
+    Vector3 world = cam.ViewportToWorldPoint(vp);
+
+    rb.MovePosition(new Vector3(world.x, rb.position.y, rb.position.z));
     }
     void disparar()
     {

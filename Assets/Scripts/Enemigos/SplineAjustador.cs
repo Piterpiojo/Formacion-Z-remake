@@ -3,7 +3,7 @@ using UnityEngine;
 public class SplineAjustador : MonoBehaviour
 {
     Camera camera;
-    float Xviewport = 1f;
+    [SerializeField]float Xviewport = 1f;
     [SerializeField] float yCoso=0.5f;
 
 

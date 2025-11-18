@@ -5,7 +5,9 @@ using System.Collections;
 
 public class GenerarDisparador : MonoBehaviour
 {
-
+    [SerializeField] float min = 7f;
+    [SerializeField] float max = 17f;
+    [SerializeField] float primerEnemigo = 20f;
     public GameObject Enemigo;
     public SplineContainer[] patrones;
 
@@ -13,7 +15,7 @@ public class GenerarDisparador : MonoBehaviour
     void Start()
     {
 
-        StartCoroutine(esperar(20f));
+        StartCoroutine(esperar(primerEnemigo ));
     }
 
 
@@ -23,7 +25,7 @@ public class GenerarDisparador : MonoBehaviour
         GameObject enemigo = Instantiate(Enemigo, patrones[num].transform.position, Quaternion.identity);
         enemigo.GetComponent<SplineAnimate>().Container = patrones[num];
         enemigo.GetComponent<SplineAnimate>().Play();
-        float rand = Random.Range(7, 17);
+        float rand = Random.Range(min, max);
         
         StartCoroutine(esperar(rand));
     }

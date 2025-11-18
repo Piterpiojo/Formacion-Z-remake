@@ -7,10 +7,9 @@ public class ControJugador : MonoBehaviour
     public GameObject balaPrefab;
     Rigidbody rb;
 
-    public GameObject robot
-    ;
+    public GameObject robot;
 
-
+    Camera cam;
     float limiteX = 60f;
     float limitey = 0.2f;
     public GameObject puntoDisparo;
@@ -27,6 +26,8 @@ public class ControJugador : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
         audio = GetComponent<AudioSource>();
+        cam = Camera.main;
+
 
     }
 
@@ -53,14 +54,23 @@ public class ControJugador : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!vivo) return;
-        if (transform.position.y > limiteX)
-        {
-            direcciones.y = -1;
-        }
+    if (!vivo) return;
 
-        rb.AddForce(direcciones.normalized * velocidad, ForceMode.Acceleration);
-        anim.SetFloat("Y", direcciones.y);
+    if (transform.position.y > limiteX)
+    {
+        direcciones.y = -1;
+    }
+
+    rb.AddForce(direcciones.normalized * velocidad, ForceMode.Acceleration);
+    anim.SetFloat("Y", direcciones.y);
+
+    Vector3 vp = cam.WorldToViewportPoint(rb.position);
+
+    vp.x = Mathf.Clamp(vp.x, 0.05f, 0.95f);
+
+    Vector3 world = cam.ViewportToWorldPoint(vp);
+
+    rb.MovePosition(new Vector3(world.x, rb.position.y, rb.position.z));
     }
 
     void disparar()
