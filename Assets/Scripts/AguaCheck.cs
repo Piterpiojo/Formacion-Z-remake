@@ -14,7 +14,7 @@ public class AguaCheck : MonoBehaviour
     {
         if (jefe && jefazo != null)
         {
-            jefazo = GameObject.FindGameObjectWithTag("jefe");
+            //jefazo = GameObject.FindGameObjectWithTag("jefe");
             jefazo.SetActive(false);
         }
 
@@ -48,6 +48,7 @@ public class AguaCheck : MonoBehaviour
         {
             spawn.SetActive(false);
         }
+        if (edificios != null)
         edificios.SetActive(false);
     }
 
