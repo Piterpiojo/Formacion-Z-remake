@@ -8,32 +8,32 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Cristal
-    second: {fileID: 2100000, guid: 360f23d3503b95b45a0ec9ff1f71468a, type: 2}
+    second: {fileID: 2100000, guid: 175eece5c1b25f64da800eb1accf95a3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Manos
-    second: {fileID: 2100000, guid: 7f1680b9e1328194483015c7bc5cdc26, type: 2}
+    second: {fileID: 2100000, guid: ca1fa2b3489cb654dbfee022511efc39, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Modelo nave superior
-    second: {fileID: 2100000, guid: f708db8c24796d34aa2353b0fd18f1de, type: 2}
+    second: {fileID: 2100000, guid: 091e7697b00ff9c4ab17191b595e4fba, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Modelo nave.001
-    second: {fileID: 2100000, guid: a2c75264ba1822b43b65d06064238ac0, type: 2}
+    second: {fileID: 2100000, guid: 56dcaf76559e1c34f949875fe32d1771, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Partes occuras
-    second: {fileID: 2100000, guid: 6826fdcfd730b2e4cad52d74af875a41, type: 2}
+    second: {fileID: 2100000, guid: 7693443979ed24a449315c5b95231661, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Piernas
-    second: {fileID: 2100000, guid: 11b8d83a67efab6428aa0d38cc31109d, type: 2}
+    second: {fileID: 2100000, guid: 126e35231fdf616419fc38322575d306, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

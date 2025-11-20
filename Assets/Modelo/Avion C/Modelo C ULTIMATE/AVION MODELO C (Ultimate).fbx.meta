@@ -3,7 +3,52 @@ guid: 849c97c98c4e6a247997ea14ebe48813
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cristal
+    second: {fileID: 2100000, guid: 175eece5c1b25f64da800eb1accf95a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Manos
+    second: {fileID: 2100000, guid: ca1fa2b3489cb654dbfee022511efc39, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Modelo cara
+    second: {fileID: 2100000, guid: dbdf6daf6b2c8ea4c85ed3819c07b8d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Modelo cuello
+    second: {fileID: 2100000, guid: 7e1d50bf87469ba44b38ba7061772729, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Modelo esqueleto
+    second: {fileID: 2100000, guid: e37896a0ea2dff1419ce8453f6369050, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Modelo nave superior
+    second: {fileID: 2100000, guid: 091e7697b00ff9c4ab17191b595e4fba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Modelo nave.001
+    second: {fileID: 2100000, guid: 56dcaf76559e1c34f949875fe32d1771, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Partes occuras
+    second: {fileID: 2100000, guid: 7693443979ed24a449315c5b95231661, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Piernas
+    second: {fileID: 2100000, guid: 126e35231fdf616419fc38322575d306, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
