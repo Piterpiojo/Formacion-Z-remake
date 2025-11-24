@@ -9,6 +9,7 @@ TagManager:
   - patrones
   - jefe
   - agua
+  - Disparo
   layers:
   - Default
   - TransparentFX
