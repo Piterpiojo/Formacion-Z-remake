@@ -18,10 +18,6 @@ public class mainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("SampleScene");
     }
-    //public void CambiarColor()
-   // {
-
-    //}
     public void SalirJuego()
     {
         Application.Quit();
