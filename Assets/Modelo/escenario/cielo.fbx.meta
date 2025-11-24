@@ -3,7 +3,12 @@ guid: eb25c82534c84eb4284091a6f8c3d8dd
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cielo
+    second: {fileID: 2100000, guid: cf7dfb281c968f64994697484fd05bd8, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
