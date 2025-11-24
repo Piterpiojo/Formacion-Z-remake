@@ -11,9 +11,7 @@ public class Disparo : MonoBehaviour
 
     void Start()
     {
-
         rb = GetComponent<Rigidbody>();
-
         Destroy(gameObject, 0.7f);
     }
 
@@ -22,18 +20,24 @@ public class Disparo : MonoBehaviour
         rb.linearVelocity = transform.forward * velocidad;
     }
 
-
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Enemigo"))
         {
             explosion();
-            Destroy(collision.gameObject);
             animExpplosion();
-            
-            Destroy(gameObject,1);
+
+            // ? Sumar puntos según el enemigo
+            EnemigoPunto enemigo = collision.gameObject.GetComponent<EnemigoPunto>();
+            if (enemigo != null)
+            {
+                enemigo.DarPuntos();
+            }
+
+            Destroy(collision.gameObject);
+            Destroy(gameObject, 1);
         }
-        if (collision.gameObject.CompareTag("jefe"))
+        else if (collision.gameObject.CompareTag("jefe"))
         {
             collision.gameObject.GetComponent<SaludEnemigo>().recibirDanio();
             Destroy(Instantiate(efect[0], transform.position, Quaternion.identity), 1f);
@@ -41,14 +45,21 @@ public class Disparo : MonoBehaviour
         }
     }
 
-
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemigo"))
         {
             explosion();
-            Destroy(other.gameObject);
             animExpplosion();
+
+            // ? Sumar puntos según el enemigo
+            EnemigoPunto enemigo = other.GetComponent<EnemigoPunto>();
+            if (enemigo != null)
+            {
+                enemigo.DarPuntos();
+            }
+
+            Destroy(other.gameObject);
             Destroy(gameObject);
         }
         else if (other.gameObject.CompareTag("jefe"))
@@ -64,6 +75,7 @@ public class Disparo : MonoBehaviour
         int num = Random.Range(0, efect.Count);
         Destroy(Instantiate(efect[num], transform.position, Quaternion.identity), 1f);
     }
+
     void OnDestroy()
     {
         GameManager.instancia.balas -= 1;

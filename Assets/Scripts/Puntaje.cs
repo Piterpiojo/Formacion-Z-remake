@@ -9,6 +9,7 @@ public class Puntaje : MonoBehaviour
 
     private static Puntaje instancia;
 
+
     private void Awake()
     {
         // Singleton para mantener un único puntaje
