@@ -7,6 +7,7 @@ public class jefe4 : MonoBehaviour
     [SerializeField] SplineContainer[] movimiento;
     [SerializeField] GameObject PosInicial;
     SplineAnimate spline;
+    int indice = 0;
     void Start()
     {
         VolverAPosicionInicial();
@@ -26,7 +27,7 @@ public class jefe4 : MonoBehaviour
 
     void finalizarMovimiento()
     {
-  
+
         spline.Pause();
         VolverAPosicionInicial();
         StartCoroutine(esperar(3f));
@@ -42,9 +43,22 @@ public class jefe4 : MonoBehaviour
     IEnumerator esperar(float segundos)
     {
         yield return new WaitForSeconds(segundos);
-        int indice = Random.Range(0, movimiento.Length);
+        indice = Random.Range(0, movimiento.Length);
         spline.Restart(true);
         spline.Container = movimiento[indice];
+        comprobarPatron();
         spline.Play();
+    }
+
+    void comprobarPatron()
+    {
+        if (indice == 2)
+        {
+            spline.ObjectUpAxis = SplineComponent.AlignAxis.YAxis;
+        }
+        else
+        {
+            spline.ObjectUpAxis = SplineComponent.AlignAxis.XAxis;
+        }
     }
 }
