@@ -4314,7 +4314,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030518, y: -0.000015259}
+  m_AnchoredPosition: {x: -0.000030518, y: 115}
   m_SizeDelta: {x: 934.4722, y: 243.0344}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &879893517
@@ -4337,9 +4337,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'GAME OVER
-
-    NIVEL 2 EN CONTRUCCION'
+  m_text: Derrota
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2b4b4936e8290f04bbd6f72dcccfe7d7, type: 2}
   m_sharedMaterial: {fileID: 1459954817905956171, guid: 2b4b4936e8290f04bbd6f72dcccfe7d7, type: 2}
@@ -6233,6 +6231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 856087525}
+  nivel: 1
   cam: {fileID: 635454958}
   fondo: {fileID: 1871156525}
   balas: 0
@@ -6411,15 +6410,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: cdbfa4651ccee5e4ead32bed04f5d8cb, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

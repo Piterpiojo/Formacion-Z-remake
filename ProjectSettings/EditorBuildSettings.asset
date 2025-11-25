@@ -11,6 +11,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/nivel2.unity
+    guid: 43c6453096f7769f6a40923a55d17143
+  - enabled: 1
+    path: Assets/Scenes/nivel3.unity
+    guid: 3b750814c262f6dfc88f71aca536e931
+  - enabled: 1
+    path: Assets/Scenes/nivel4.unity
+    guid: f5765f998f06c1846be2dd31eaee3af3
+  - enabled: 1
+    path: Assets/Scenes/nivel5.unity
+    guid: 40b981b8a85a9244883f2c543cc24078
+  - enabled: 1
+    path: Assets/Scenes/Pantalla de victoria.unity
+    guid: d767f13bb93374544a4fa9c66cedfc50
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 2b63665096d1d77a0afd294243706946, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

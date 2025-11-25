@@ -19,7 +19,7 @@ public class SaludEnemigo : MonoBehaviour
             if (gameObject.CompareTag("jefe") && final)
             {
                 Destroy(transform.parent.gameObject);
-                GestionVida.instancia.perder();
+                GameManager.instancia.CambiarNivel();
 
             }
             Destroy(gameObject);

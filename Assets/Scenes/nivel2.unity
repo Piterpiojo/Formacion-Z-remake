@@ -5197,6 +5197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 0}
+  nivel: 2
   cam: {fileID: 635454958}
   fondo: {fileID: 1871156525}
   balas: 0

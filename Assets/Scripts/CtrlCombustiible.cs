@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CtrlCombustiible : MonoBehaviour
 {
@@ -80,5 +81,7 @@ public class CtrlCombustiible : MonoBehaviour
             Texto.text = combustible.ToString("00");
         }
     }
+
+
 
 }

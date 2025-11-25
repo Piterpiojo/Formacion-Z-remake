@@ -1,11 +1,12 @@
 using Unity.Cinemachine;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject jugador;
     public static GameManager instancia;
-
+    public int nivel = 1;
     public CinemachineCamera cam;
 
     public ElFondoScroll fondo;
@@ -39,5 +40,13 @@ public class GameManager : MonoBehaviour
     public CtrlCombustiible GetCtrlCombustiible()
     {
         return ctrlCombustiible;
-    }
+    } 
+
+public void CambiarNivel()
+{
+
+           SceneManager.LoadScene(nivel+1);
+    
+}
+
 }
