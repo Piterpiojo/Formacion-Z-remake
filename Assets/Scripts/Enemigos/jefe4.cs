@@ -12,8 +12,7 @@ public class jefe4 : MonoBehaviour
         VolverAPosicionInicial();
         spline = GetComponent<SplineAnimate>();
         int indice = Random.Range(0, movimiento.Length);
-        spline.Container = movimiento[indice];
-        spline.Play();
+        StartCoroutine(esperar(3f));
     }
 
 
