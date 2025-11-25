@@ -176,7 +176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bala: {fileID: 1328498907829183440, guid: 3cb880f64721839b8956abfa686e6771, type: 3}
   puntoDisparo: {fileID: 126781305986816631}
-  max: 300
+  max: 25
   min: 10
 --- !u!114 &950003183538765239
 MonoBehaviour:
