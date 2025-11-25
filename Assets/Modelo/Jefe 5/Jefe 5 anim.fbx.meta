@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 30d608fbeb5704945a61423ef5a31fb6
+guid: 1d52b78fab72ba84c8c25e618f074bf9
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -20,8 +20,8 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
-    importConstraints: 0
+    importAnimatedCustomProperties: 1
+    importConstraints: 1
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -31,9 +31,103 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: saludar
-      takeName: "Esqueleto|Esqueleto_acci\xF3n"
-      internalID: 4582559413860510281
+      name: Esqueleto|atacar
+      takeName: Esqueleto|atacar
+      internalID: 2841721847873083720
+      firstFrame: 1
+      lastFrame: 54
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.4130137
+        functionName: DispararBala
+        data: EnemigoDisparo
+        objectReferenceParameter: {fileID: 919132149155446097, guid: f2a2bcf0a4ffde04781fc38bd3f980a6, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Esqueleto|Presencia
+      takeName: Esqueleto|Presencia
+      internalID: 5664412724728367142
+      firstFrame: 1
+      lastFrame: 54
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: "Esqueleto|recibir da\xF1o"
+      takeName: "Esqueleto|recibir da\xF1o"
+      internalID: 8931131053639288598
+      firstFrame: 1
+      lastFrame: 54
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Esqueleto|SaludoReal
+      takeName: Esqueleto|SaludoReal
+      internalID: 8966961122655394214
       firstFrame: 0
       lastFrame: 50
       wrapMode: 0
@@ -42,7 +136,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 1
       loopBlendPositionY: 1
@@ -81,8 +175,8 @@ ModelImporter:
     weldVertices: 1
     bakeAxisConversion: 0
     preserveHierarchy: 0
-    skinWeightsMode: 0
-    maxBonesPerVertex: 4
+    skinWeightsMode: 1
+    maxBonesPerVertex: 15
     minBoneWeight: 0.001
     optimizeBones: 1
     meshOptimizationFlags: -1

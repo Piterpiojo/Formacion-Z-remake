@@ -122,6 +122,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1b57b5b3bc4c19d4f8f580fc46d8fa0d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7106584192143174227}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1b57b5b3bc4c19d4f8f580fc46d8fa0d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3500049825791569883}
   m_SourcePrefab: {fileID: 100100000, guid: 1b57b5b3bc4c19d4f8f580fc46d8fa0d, type: 3}
 --- !u!4 &4930888818774441866 stripped
 Transform:
@@ -209,3 +212,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bala: {fileID: 3121541971484126887, guid: d934ac74e32de4c4e818d21529ce81fc, type: 3}
   puntoDisparo: {fileID: 8887501897746453922, guid: d934ac74e32de4c4e818d21529ce81fc, type: 3}
+--- !u!114 &3500049825791569883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5703204119079986480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccec3416c6a22cf43b237acc5d800430, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puntosQueDa: 150
