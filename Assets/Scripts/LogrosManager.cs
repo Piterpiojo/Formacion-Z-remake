@@ -1,5 +1,6 @@
-using UnityEngine;
 using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LogrosManager : MonoBehaviour
 {
@@ -53,5 +54,24 @@ public class LogrosManager : MonoBehaviour
     {
         if (panelLogro != null)
             panelLogro.SetActive(false);
+    }
+
+    public void ResetearLogros()
+    {
+        for (int i = 0; i < desbloqueados.Length; i++)
+        {
+            desbloqueados[i] = false;
+        }
+
+        if (panelLogro != null)
+            panelLogro.SetActive(false);
+
+        Debug.Log("Reiniciado");
+    }
+    public void VolverAlMenu()
+    {
+        ResetearLogros();
+        SceneManager.LoadScene("Menu");
+
     }
 }

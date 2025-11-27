@@ -2682,7 +2682,7 @@ Transform:
   m_GameObject: {fileID: 444985517}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 602, y: 0, z: 0}
+  m_LocalPosition: {x: 599.68, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10151,7 +10151,7 @@ MonoBehaviour:
   - {fileID: 700309256}
   - {fileID: 1209813829}
   todos_spawns: []
-  edificios: {fileID: 0}
+  edificios: {fileID: 284209461}
 --- !u!1 &1941014119 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4403578824947819841, guid: 2de69ba0427f3deea885dc843814e5d7, type: 3}

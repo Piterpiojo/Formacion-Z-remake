@@ -44,8 +44,8 @@ public class GameManager : MonoBehaviour
 
 public void CambiarNivel()
 {
-
-           SceneManager.LoadScene(nivel+1);
+        PlayerPrefs.SetInt("NivelActual", nivel);
+        SceneManager.LoadScene(6);
     
 }
 

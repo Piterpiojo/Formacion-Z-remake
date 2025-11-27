@@ -116,5 +116,9 @@ public class ControJugador : MonoBehaviour
             GestionVida.instancia.recibir_danio(1);
             Destroy(other.gameObject);
         }
+        if (other.gameObject.tag == "jefe")
+        {
+            GestionVida.instancia.recibir_danio(1);
+        }
     }
 }

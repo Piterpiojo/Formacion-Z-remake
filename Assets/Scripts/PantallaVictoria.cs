@@ -40,6 +40,11 @@ public class PantallaVictoria : MonoBehaviour
     }
     public void CambiarEscena()
     {
-        SceneManager.LoadScene("Menu");
+        int nivelActual = PlayerPrefs.GetInt("NivelActual");
+        if ( nivelActual < 5)
+        {
+            SceneManager.LoadScene(nivelActual + 1);
+        }
+       
     }
 }

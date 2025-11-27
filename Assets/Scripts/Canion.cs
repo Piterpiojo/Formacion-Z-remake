@@ -16,7 +16,7 @@ public class Canion : MonoBehaviour
     void Disparar()
     {
         Destroy(Instantiate(balaPrefab, puntoDisparo.position, puntoDisparo.rotation), 5f);
-        Debug.Log("Disparo");
+
     }
     
 
