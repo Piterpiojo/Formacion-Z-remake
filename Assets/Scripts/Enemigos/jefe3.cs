@@ -6,7 +6,7 @@ public class jefe3 : MonoBehaviour
     [SerializeField] Transform[] posiciones;
     [SerializeField] float tiempoCambio;
 
-    [SerializeField] GameObject mira;
+    [SerializeField] GameObject[] mira;
 
     [SerializeField] GameObject prefab;
     void Start()
@@ -41,7 +41,8 @@ public class jefe3 : MonoBehaviour
 
     void disparar()
     {
-        Destroy(Instantiate(prefab, transform.position, Quaternion.identity), 2f);
+        int miraElegida = Random.Range(0, mira.Length);
+        Destroy(Instantiate(prefab, mira[miraElegida].transform.position, Quaternion.identity), 2f);
     }
 
     IEnumerator disparoTiempo(float segundos)
